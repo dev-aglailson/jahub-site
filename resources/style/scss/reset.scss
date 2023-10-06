@@ -1,0 +1,15 @@
+@use 'v';
+@import url('../fonts/poppins.css'); //font-family: 'Poppins', sans-serif;
+@import url('../fonts/inter.css'); //font-family: 'Inter', sans-serif;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F6F8FA;
+}
+img{width: 100%;}
+ul{list-style: none;}
+a{text-decoration: none;}

@@ -1,0 +1,106 @@
+/************ANIMAÇÕES LATERAIS************/
+
+//ANIMAÇÕES DA DIREITA PARA ESQUERDA
+.animation-right-to-left{
+    transform: translateX(30px);
+    //opacity: 0;
+    transition: transform .5s;
+    transition-timing-function: ease-out;
+    filter: blur(4px);
+}
+.animation-right-to-left-active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-timing-function:cubic-bezier(.49,.79,1,.84);
+    filter: blur(0);
+}
+
+//ANIMAÇÕES DA ESQUERDA PARA DIREITA
+.animation-left-to-right{
+    transform: translateX(-30px);
+    //opacity: 0;
+    transition: transform .5s;
+    transition-timing-function: ease-out;
+    filter: blur(4px);
+}
+.animation-left-to-right-active{
+    transform: translateX(0);
+    opacity: 1;
+    transition-timing-function:cubic-bezier(.49,.79,1,.84);
+    filter: blur(0);
+}
+
+//ANIMAÇÕES DE BAIXO PARA CIMA
+.animation-bottom-to-top{
+    transform: translateY(50%);
+    //opacity: 0;
+    transition: transform .5s;
+    transition-timing-function: ease-out;
+    filter: blur(4px);
+}
+
+.animation-bottom-to-top-active{
+    transform: translateY(0);
+    opacity: 1;
+    transition-timing-function:cubic-bezier(.49,.79,1,.84);
+    filter: blur(0);
+}
+
+
+.content-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    overflow: hidden;
+    
+    .btn-expandir{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #efefef;
+        border-radius: 100%;
+        text-align: center;
+        .icon-btn{
+            display: block;
+            width: 20px;
+            height: 12px;
+            background-image: url(../../../../../resources/img/tema/chevron-down.svg);
+            background-position: center center;
+            background-position: center;
+            background-size: cover;
+            transition: .5s;
+        }
+    }
+    .infos{
+        max-height: 0;
+        transition: .3s;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .5s;
+    }
+}
+
+.content-infos-open{
+    .btn-expandir{
+        .icon-btn{
+            transform: rotate(180deg);
+            transition: .3s;
+        }
+    }
+}
+
+.content-infos-open{
+    .btn-expandir{
+        .icon{
+            color: #333;
+            padding: 5px;
+            transform: rotate(180deg);
+            transition: .3s;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/************ANIMAÇÕES LATERAIS************/
+.animation-right-to-left {
+  transform: translateX(30px);
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  filter: blur(4px);
+}
+
+.animation-right-to-left-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition-timing-function: cubic-bezier(0.49, 0.79, 1, 0.84);
+  filter: blur(0);
+}
+
+.animation-left-to-right {
+  transform: translateX(-30px);
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  filter: blur(4px);
+}
+
+.animation-left-to-right-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition-timing-function: cubic-bezier(0.49, 0.79, 1, 0.84);
+  filter: blur(0);
+}
+
+.animation-bottom-to-top {
+  transform: translateY(50%);
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+  filter: blur(4px);
+}
+
+.animation-bottom-to-top-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition-timing-function: cubic-bezier(0.49, 0.79, 1, 0.84);
+  filter: blur(0);
+}
+
+.content-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.content-infos .btn-expandir {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  border-radius: 100%;
+  text-align: center;
+}
+.content-infos .btn-expandir .icon-btn {
+  display: block;
+  width: 20px;
+  height: 12px;
+  background-image: url(../../../../../resources/img/tema/chevron-down.svg);
+  background-position: center center;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+.content-infos .infos {
+  max-height: 0;
+  transition: 0.3s;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.content-infos-open .btn-expandir .icon-btn {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.content-infos-open .btn-expandir .icon {
+  color: #333;
+  padding: 5px;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=animations.css.map */

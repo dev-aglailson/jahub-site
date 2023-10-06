@@ -1,0 +1,111 @@
+.container-principal{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: [inicio-left] 6% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 6% [fim-rigth];
+    grid-template-rows: 
+                    [inicio-section-home] 100vh [fim-section-home]0
+                    [inicio-section-sobre] auto [fim-section-sobre]0
+                    [inicio-section-portfolio] auto [fim-section-portfolio]90px
+                    [inicio-section-precos] auto [fim-section-precos];
+
+    .section{
+        padding: 15px;
+        padding-top: 0;
+
+    }
+}
+
+.contente-btn-volta-topo{
+    position: fixed;
+    right: 30px;
+    bottom:30px;
+    z-index: 9;
+
+    .btn-volta-top{
+        padding: 8px 6px ;
+        border: 1px solid #FFFFFF;
+        cursor: pointer;
+        background-color: rgba(31,43,53,.74);
+        border-radius: 3px;
+        display: none;
+        .icon-btn{
+            display: block;
+            width: 20px;
+            height: 12px;
+            background-image: url(../../img/tema/chevron-up.svg);
+            background-position: center center;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .btn-volta-top-visivel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+//Mediaqueries - ajustes em comum entre as  section/content
+@media screen and (min-width: 460px) {
+    .container-principal{
+        .section{
+            padding: 0 15px;
+            .container{
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-principal{
+        .section{
+            padding: 0;
+            .container{
+                width: 720px;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
+
+
+//Mediaqueries 
+@media screen and (min-width: 990px) {
+    .container-principal{
+        grid-template-rows: 
+        [inicio-section-home] 100vh [fim-section-home]0px
+        [inicio-section-sobre] auto [fim-section-sobre]70px
+        [inicio-section-portfolio] auto [fim-section-portfolio]90px
+        [inicio-section-precos] auto [fim-section-precos];
+        .section{
+            padding: 0;
+            padding-top: 20px;
+            min-width: 100vh;
+            .container{
+                width: 990px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+//Mediaqueries - ajustes em comum entre as  section/content
+@media screen and (min-width: 1280px) {
+    .container-principal{
+        .section{
+            .container{
+                width: 1280px;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
