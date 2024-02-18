@@ -4,8 +4,6 @@
 
 .container-cabecalho {
   width: 100%;
-  padding: 15px;
-  padding-top: 10px;
   position: fixed;
   z-index: 10;
   font-family: "Open sans", sans-serif;
