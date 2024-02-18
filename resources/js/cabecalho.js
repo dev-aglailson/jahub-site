@@ -219,14 +219,14 @@ window.addEventListener('load', function(){
         if(posicaoScrollAtual >= alturaCabecalho){
 
             cabecalhoBranco = true
-            cabecalho.classList.add('cabecalho-branco')
+            cabecalho.classList.add('container-cabecalho-dark')
             mudarCorBtnMenu(cabecalhoBranco)
             mudarCorLogo(cabecalhoBranco)
 
         }else{
 
             cabecalhoBranco = false
-            cabecalho.classList.remove('cabecalho-branco')
+            cabecalho.classList.remove('container-cabecalho-dark')
             mudarCorBtnMenu(cabecalhoBranco)
             mudarCorLogo(cabecalhoBranco)
         }

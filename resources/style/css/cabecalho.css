@@ -10,6 +10,8 @@
   z-index: 10;
   font-family: "Open sans", sans-serif;
   padding-bottom: 0;
+  background: #FFFFFF;
+  border-bottom-color: #000;
 }
 .container-cabecalho .content-logo-btn-menu {
   width: 100%;
@@ -37,13 +39,11 @@
   background-size: cover;
   background-image: url(../../img/tema/logo.svg);
 }
-.container-cabecalho .content-logo-btn-menu .logo-escuro a {
-  color: #161925;
-}
 .container-cabecalho .content-logo-btn-menu .btn-menu {
-  width: 20px;
-  height: 16px;
+  width: 24px;
+  height: 20px;
   display: flex;
+  padding: 2px 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -52,10 +52,15 @@
   cursor: pointer;
   z-index: 2;
 }
+.container-cabecalho .content-logo-btn-menu .btn-menu .linha-btn-1, .container-cabecalho .content-logo-btn-menu .btn-menu .linha-btn-3 {
+  width: 80%;
+}
+.container-cabecalho .content-logo-btn-menu .btn-menu .linha-btn-2 {
+  width: 100%;
+}
 .container-cabecalho .content-logo-btn-menu .btn-menu .linha-btn {
   display: block;
-  width: 100%;
-  height: 4px;
+  height: 2px;
   background-color: #1F2B35;
   transition: 0.3s;
   border-radius: 2px;
@@ -70,21 +75,23 @@
   background-color: #fff;
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-2 {
-  margin-top: -4px;
+  margin-top: -2px;
   transform: translateX(-110%);
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-1 {
+  width: 100%;
   transform: rotate(45deg);
 }
 .container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-3 {
-  margin-top: -4px;
+  width: 100%;
+  margin-top: -2px;
   transform: rotate(-45deg);
 }
 
-.cabecalho-branco .content-logo-btn-menu {
-  background-color: rgb(31, 43, 53);
+.container-cabecalho-dark {
+  background-color: #000;
 }
-.cabecalho-branco .content-logo-btn-menu .btn-menu .linha-btn {
+.container-cabecalho-dark .content-logo-btn-menu .btn-menu .linha-btn {
   background-color: #FFF;
 }
 
@@ -199,20 +206,25 @@
   .container-cabecalho .content-logo-btn-menu .logo a {
     width: 130px;
     height: 32px;
-    background-image: url(../../img/tema/logo-desktop.svg);
+    background-image: url(../../img/tema/logo-desktop-claro.svg);
   }
-  .cabecalho-branco .content-logo-btn-menu .logo a {
+  .container-cabecalho-dark .content-logo-btn-menu .logo a {
     width: 130px;
     height: 32px;
     background-image: url(../../img/tema/logo-desktop-claro.svg);
   }
-  .cabecalho-branco .content-logo-btn-menu.menu-aberto .logo a {
+  .container-cabecalho-dark .content-logo-btn-menu.menu-aberto .logo a {
     width: 130px;
     height: 32px;
     background-image: url(../../../../img/tema/logo-desktop.svg);
   }
 }
 @media screen and (min-width: 990px) {
+  .container-cabecalho {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
+    backdrop-filter: blur(10px);
+  }
   .container-cabecalho .content-logo-btn-menu .btn-menu {
     display: none;
   }
@@ -250,7 +262,7 @@
   }
   .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
     font-size: 1em;
-    color: #161925;
+    color: #FFFFFF;
   }
   .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item:last-child {
     margin-right: 0;
@@ -300,22 +312,25 @@
     color: #FFF;
     background-color: #00aaff;
   }
-  .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
+  .container-cabecalho-dark {
+    background-color: #000;
+  }
+  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
     color: #FFF;
   }
-  .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar {
+  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar {
     width: 100%;
   }
-  .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar a {
+  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar a {
     color: #FFFFFF;
   }
-  .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar a span#icon {
+  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar a span#icon {
     display: block;
     width: 20px;
     height: 20px;
     background-image: url(../../../../img/tema/icon-entrar-light.svg);
   }
-  .cabecalho-branco .content-logo-btn-menu .content-menu-aberto .logo a {
+  .container-cabecalho-dark .content-logo-btn-menu .content-menu-aberto .logo a {
     width: 130px;
     height: 32px;
     background-image: url(../../img/tema/logo-desktop.svg);

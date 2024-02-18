@@ -1,5 +1,5 @@
 .section-home {
-  background: #FFF;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../../img/tema/bg-grid.jpg") center/cover no-repeat;
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-home/fim-section-home;
 }
@@ -15,8 +15,8 @@
 .section-home .container .row-container .content-titles-btns-acoes .title {
   font-size: 38px;
   font-weight: 900;
-  color: #1F2B35;
-  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.0901960784);
+  color: #FFF;
+  text-shadow: 0px 3px 8px #000017;
   font-size: 24px;
   line-height: 28px;
   text-align: left;
@@ -46,19 +46,19 @@
   font-weight: 500;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 16px 48px #ced2d5;
+  box-shadow: 0 16px 48px #000017;
   border: 2px solid transparent;
 }
 .section-home .container .row-container .btns-acoes .lista-btns-acoes .btn:hover {
   border: 2px solid #1F2B35;
 }
 .section-home .container .row-container .btns-acoes .lista-btns-acoes .btn-criar-cartao {
-  color: #1F2B35;
+  color: #FFF;
   background: #00f968;
 }
 .section-home .container .row-container .btns-acoes .lista-btns-acoes .btn-planos {
   background-color: #00aaff;
-  color: #1F2B35;
+  color: #FFF;
 }
 .section-home .container .row-container .btns-acoes-large {
   display: none;
@@ -88,11 +88,33 @@
   position: absolute;
   border-radius: 25px;
   overflow: hidden;
-  background-image: url(../../img/tema/cartao-visita-example.png);
+  background-image: url(../../img/tema/site.png);
   background-size: 99%;
   background-repeat: no-repeat;
   background-position: top center;
   z-index: 1;
+}
+.section-home .container .row-btn-iniciar .content-btn-iniciar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section-home .container .row-btn-iniciar .content-btn-iniciar .btn-iniciar {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.section-home .container .row-btn-iniciar .content-btn-iniciar .btn-iniciar .icon-btn {
+  width: 18px;
+  height: 25px;
+  background-image: url("../../img/tema/mouse.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-sobre {
@@ -555,15 +577,16 @@
 }
 @media screen and (min-width: 990px) {
   .section-home .container {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
     padding-top: 70px;
-    height: auto;
+    justify-content: space-between;
   }
   .section-home .container .row-container {
     flex-direction: row;
   }
   .section-home .container .row-container .content-titles-btns-acoes {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
     margin-top: 70px;
@@ -571,8 +594,8 @@
   .section-home .container .row-container .content-titles-btns-acoes .title {
     text-align: left;
     font-family: "Poppins", sans-serif;
-    font-size: 48px;
-    line-height: 50px;
+    font-size: 64px;
+    line-height: 70px;
   }
   .section-home .container .row-container .content-titles-btns-acoes .subtitle {
     display: none;
@@ -580,7 +603,7 @@
   .section-home .container .row-container .content-titles-btns-acoes .subtitle-to-large {
     display: flex;
     margin-top: 30px;
-    color: #1F2B35;
+    color: #FFF;
     text-align: left;
     font-weight: 700;
     line-height: 24px;
@@ -588,6 +611,7 @@
   }
   .section-home .container .row-container .content-titles-btns-acoes .btns-acoes {
     justify-content: flex-start;
+    margin-top: 70px;
   }
   .section-home .container .row-container .content-image {
     flex: 1;
@@ -603,6 +627,9 @@
     width: 278px;
     height: 563px;
     border-radius: 40px;
+  }
+  .section-home .container .row-btn-iniciar .content-btn-iniciar {
+    padding: 15px 0;
   }
   .section-sobre .container {
     padding-top: 30px;

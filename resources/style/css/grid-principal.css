@@ -67,6 +67,7 @@
   }
   .container-principal .section .container {
     width: 990px;
+    height: 100%;
     margin: 0 auto;
   }
 }
