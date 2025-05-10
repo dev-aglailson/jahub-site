@@ -87,7 +87,9 @@
 }
 
 .container-cabecalho-dark {
-  background-color: #000;
+  background: rgba(255, 255, 255, 0.1); /* Transparência */
+  backdrop-filter: blur(10px); /* Efeito de vidro */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
 }
 .container-cabecalho-dark .content-logo-btn-menu .btn-menu .linha-btn {
   background-color: #FFF;
