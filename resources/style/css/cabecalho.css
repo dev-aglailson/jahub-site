@@ -206,17 +206,17 @@
   .container-cabecalho .content-logo-btn-menu .logo a {
     width: 130px;
     height: 32px;
-    background-image: url(../../img/tema/logo-desktop-claro.svg);
+    background-image: url(../../img/tema/logo.svg);
   }
   .container-cabecalho-dark .content-logo-btn-menu .logo a {
     width: 130px;
     height: 32px;
-    background-image: url(../../img/tema/logo-desktop-claro.svg);
+    background-image: url(../../img/tema/logo.svg);
   }
   .container-cabecalho-dark .content-logo-btn-menu.menu-aberto .logo a {
     width: 130px;
     height: 32px;
-    background-image: url(../../../../img/tema/logo-desktop.svg);
+    background-image: url(../../../../img/tema/logo.svg);
   }
 }
 @media screen and (min-width: 990px) {
