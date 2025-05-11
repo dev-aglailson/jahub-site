@@ -1,7 +1,3 @@
-.paraliza-body {
-  overflow: hidden;
-}
-
 .container-cabecalho {
   width: 100%;
   position: fixed;
@@ -87,9 +83,7 @@
 }
 
 .container-cabecalho-dark {
-  background: rgba(255, 255, 255, 0.1); /* Transparência */
-  backdrop-filter: blur(10px); /* Efeito de vidro */
-  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  background-color: #000;
 }
 .container-cabecalho-dark .content-logo-btn-menu .btn-menu .linha-btn {
   background-color: #FFF;
@@ -346,5 +340,3 @@
     margin: 0 auto;
   }
 }
-
-/*# sourceMappingURL=cabecalho.css.map */
