@@ -690,9 +690,11 @@ a {
 }
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .icon-item {
   display: block;
-  width: 16px;
-  height: 12px;
-  margin-right: 8px;
+  min-width: 16px;
+  max-width: 16px;
+  min-height: 12px;
+  max-height: 12px;
+  margin-right: 4px;
   background-image: url(../../img/tema/chevron.svg);
   background-position: center center;
   background-repeat: no-repeat;
