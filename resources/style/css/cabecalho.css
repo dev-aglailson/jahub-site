@@ -3,9 +3,14 @@
   position: fixed;
   z-index: 10;
   font-family: "Open sans", sans-serif;
-  padding-bottom: 0;
-  background: #FFFFFF;
+}
+
+.container-cabecalho-dark {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px); /* O efeito vidro */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
   border-bottom-color: #000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra para realce */
 }
 .container-cabecalho .content-logo-btn-menu {
   width: 100%;
@@ -26,13 +31,18 @@
 }
 .container-cabecalho .content-logo-btn-menu .logo a {
   font-size: 0;
-  width: 40px;
-  height: 32px;
+  width: 110px;
+  height: 19.43px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../../img/tema/logo.svg);
+  background-image: url(../../img/tema/logo-nome.svg);
 }
+
+.container-cabecalho-dark .content-logo-btn-menu .logo a, .container-cabecalho .content-logo-btn-menu.menu-aberto .logo a{
+  background-image: url(../../img/tema/logo-nome-black.svg);
+}
+
 .container-cabecalho .content-logo-btn-menu .btn-menu {
   width: 24px;
   height: 20px;
@@ -55,7 +65,7 @@
 .container-cabecalho .content-logo-btn-menu .btn-menu .linha-btn {
   display: block;
   height: 2px;
-  background-color: #1F2B35;
+  background-color: #FFFFFF;
   transition: 0.3s;
   border-radius: 2px;
 }
@@ -81,14 +91,6 @@
   margin-top: -2px;
   transform: rotate(-45deg);
 }
-
-.container-cabecalho-dark {
-  background-color: #000;
-}
-.container-cabecalho-dark .content-logo-btn-menu .btn-menu .linha-btn {
-  background-color: #FFF;
-}
-
 .content-menu {
   width: 100%;
   height: 100%;
@@ -187,6 +189,7 @@
   top: 0;
   left: 0;
   transition: 0.3s;
+  height: 100vh;
 }
 .content-menu-aberto .menu-principal {
   transform: translateX(0);
@@ -196,23 +199,6 @@
   transition: 0.3s;
 }
 
-@media screen and (min-width: 768px) {
-  .container-cabecalho .content-logo-btn-menu .logo a {
-    width: 130px;
-    height: 32px;
-    background-image: url(../../img/tema/logo.svg);
-  }
-  .container-cabecalho-dark .content-logo-btn-menu .logo a {
-    width: 130px;
-    height: 32px;
-    background-image: url(../../img/tema/logo.svg);
-  }
-  .container-cabecalho-dark .content-logo-btn-menu.menu-aberto .logo a {
-    width: 130px;
-    height: 32px;
-    background-image: url(../../../../img/tema/logo.svg);
-  }
-}
 @media screen and (min-width: 990px) {
   .container-cabecalho {
     background: transparent;
@@ -305,29 +291,6 @@
   .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu .content-submenu .submenu .sub-item:hover a {
     color: #FFF;
     background-color: #00aaff;
-  }
-  .container-cabecalho-dark {
-    background-color: #000;
-  }
-  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
-    color: #FFF;
-  }
-  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar {
-    width: 100%;
-  }
-  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar a {
-    color: #FFFFFF;
-  }
-  .container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.content-btn-entrar a span#icon {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-image: url(../../../../img/tema/icon-entrar-light.svg);
-  }
-  .container-cabecalho-dark .content-logo-btn-menu .content-menu-aberto .logo a {
-    width: 130px;
-    height: 32px;
-    background-image: url(../../img/tema/logo-desktop.svg);
   }
 }
 @media screen and (min-width: 1280px) {
