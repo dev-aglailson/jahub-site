@@ -1,0 +1,226 @@
+.section-sobre {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-sobre/fim-section-sobre;
+  background-color: #F6F8FA;
+}
+
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .content-section{
+  display: flex;
+  flex-direction: column;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  background-color: #fff;
+  box-shadow: 0 16px 48px #e2e8ed;
+  padding: 0px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .title {
+  line-height: 35px;
+  font-size: 32px;
+  font-weight: 900;
+  color: #1F2B35;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .subtitle {
+  color: #6F8394;
+  border-left: 5px solid #3BF4FB;
+  padding: 20px;
+  line-height: 24px;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .subtitle .btn-acao-subtitle {
+  color: #1F2B35;
+  text-decoration: underline;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box {
+  width: 70%;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  box-shadow: 0 16px 48px #e2e8ed;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box .icon-box {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box .icon-box .background-icon {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box .btn-expandir {
+  margin-bottom: 5px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box .title-box {
+  font-size: 25px;
+  text-align: center;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box .content-infos .infos p {
+  font-weight: 600;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-compartilhamento .title-box {
+  color: #3BF4FB;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-compartilhamento .content-infos .infos {
+  background: #3BF4FB;
+  border-radius: 10px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-compartilhamento .content-infos .infos p {
+  color: #161925;
+  padding: 10px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-sustentabilidade .title-box {
+  color: #00f968;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-sustentabilidade .content-infos .infos {
+  background: #00f968;
+  border-radius: 10px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-sustentabilidade .content-infos .infos p {
+  color: #161925;
+  padding: 10px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-interatividade .title-box {
+  color: #5271FF;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-interatividade .content-infos .infos {
+  background: #5271FF;
+  border-radius: 10px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box-interatividade .content-infos .infos p {
+  color: #161925;
+  padding: 10px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .title-ilustration p {
+  line-height: 35px;
+  font-size: 32px;
+  font-weight: 900;
+  color: #1F2B35;
+  margin-bottom: 30px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .title-lista {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens {
+  display: flex;
+  flex-direction: column;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista {
+  font-family: "Poppins", sans-serif;
+  color: #6F8394;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .icon-item {
+  display: block;
+  min-width: 16px;
+  max-width: 16px;
+  min-height: 12px;
+  max-height: 12px;
+  margin-right: 4px;
+  background-image: url(../../img/tema/chevron.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .background-ilustration img{
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px){
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .content-section{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre {
+    width: 55%;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .title {
+    padding: 30px;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .subtitle {
+    padding: 30px;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .infos-and-ilustration {
+    padding: 30px;
+    padding-top: 0;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration {
+    flex: 1;
+    padding: 30px;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .title-ilustration p {
+    line-height: 35px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #1F2B35;
+    margin-bottom: 30px;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .background-ilustration {
+    width: 35%;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .section-sobre .container {
+    padding-top: 30px;
+  }
+
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-titles-section-sobre .boxes-vantagens .box {
+    width: 40%;
+  }
+}

@@ -147,7 +147,7 @@
   padding: 12px 30px;
   font-size: 1.1em;
   color: #161925;
-  font-weight: 900;
+  font-weight: 6600;
 }
 .content-menu .menu-principal .ul-items-menu li.item:hover a {
   color: #FFFFFF;
@@ -242,7 +242,7 @@
   }
   .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
     font-size: 1em;
-    color: #FFFFFF;
+    color: #444;
   }
   .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item:last-child {
     margin-right: 0;
