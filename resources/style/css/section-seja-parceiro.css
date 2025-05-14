@@ -1,0 +1,81 @@
+.section-seja-parceiro {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-seja-parceiro/fim-section-seja-parceiro;
+  background: #FFFFFF;
+}
+
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form{
+
+}
+
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form {
+  overflow: auto;
+}
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col .div-labels {
+  display: flex;
+  flex-direction: column;
+}
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col .div-labels .label-instrucao {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #333335;
+  margin-bottom: 0.5em;
+  font-family: "Inter", sans-serif;
+  color: #FF8000;
+}
+
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group.form-group-politicas-privacidade .fg-row .fg-col{
+  flex-direction: row;
+}
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group.form-group-politicas-privacidade .fg-row .fg-col .ipt-form{
+  width: auto;
+  margin-right: 10px;
+}
+
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col .label-ipt {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #333335;
+  margin-bottom: 0.5em;
+  font-family: "Inter", sans-serif;
+}
+
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col .ipt-form {
+  color: #333335;
+  line-height: 1.6;
+  width: 100%;
+  font-size: .9em;
+  padding: 0.5em 1em;
+  border: 1px solid #dee2e6;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  border-radius: 6px;
+  outline: none;
+}
+
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form-lead-partner .form-group-btn-submit .fg-row .fg-col{
+  align-items: center;
+}
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form-lead-partner .form-group-btn-submit #btn-cadastro{
+  padding: 0.65em 1em;
+  border-radius: 0.5em;
+  font-size: 0.95em;
+  background-color: #00aaff;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+}

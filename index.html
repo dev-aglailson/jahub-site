@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="resources/style/css/page-home.css">
   <link rel="stylesheet" href="resources/style/css/section-home.css">
   <link rel="stylesheet" href="resources/style/css/section-sobre.css">
+  <link rel="stylesheet" href="resources/style/css/section-seja-parceiro.css">
   <link rel="stylesheet" href="resources/style/css/animations.css">
   <script src="resources/js/cabecalho.js"></script>
   <script src="resources/js/main.js"></script>
@@ -44,7 +45,7 @@
               <a href="#sobre">Sobre</a>
             </li>
             <li class="item item-auto-scroll" linkinterno="true" itemmenu="true">
-              <a href="#seja-parceiro">Comece agora</a>
+              <a href="#seja-parceiro">Quero ser parceiro</a>
             </li>
             <!--<li class="item item-auto-scroll" linkinterno="true" itemmenu="true">
               <a href="#portfolio">Portfólio</a>
@@ -106,7 +107,7 @@
               <li linkinterno="true" class="item-auto-scroll">
                 <a href="#seja-parceiro" class="btn btn-criar-cartao bounce-top">
                   <i class="lni lni-apple"></i>
-                  Quero ser parceiro
+                  Comece agora
                 </a>
               </li>
             </ul>
@@ -240,7 +241,55 @@
                 <p class="animation-right-to-left title" animationTime=".7s">
                   Seja nosso parceiro
                 </p>
-                  <h4 class="title-lista"> Preencha as informações abaixo, entraremos em contato assim que possivel. </h4>
+                  <h4 class="subtitle"> Preencha as informações abaixo. Entraremos em contato assim que possível. </h4>
+              </div>
+
+              <div class="content-form">
+                  <form method="post" class="form form-lead-partner" id="form-cadastro">
+                      <div class="form-group form-group-names">
+                          <div class="fg-row">
+                              <div class="fg-col">
+                                  <div class="content-fg-col">
+                                      <label for="#ipt-nome" class="label-ipt label-ipt-nome">Nome</label>
+                                      <input type="text" class="ipt-form" id="ipt-nome" name="nome" placeholder="Seu nome">
+                                  </div>
+                              </div>
+                              <div class="fg-col">
+                                <div class="content-fg-col">
+                                  <label for="#ipt-email" class="label-ipt label-ipt-email">E-mail</label>
+                                  <input type="text" class="ipt-form" id="ipt-email" name="email" placeholder="Seu e-mail">
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="fg-row">
+                              <div class="fg-col">
+                                  <label for="#ipt-celular" class="label-ipt label-ipt-celular">Celular</label>
+                                  <input type="text" class="ipt-form" id="ipt-celular" name="celular" placeholder="Seu número de celular com DD">
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="form-group form-group-politicas-privacidade">
+                          <div class="fg-row">
+                              <div class="fg-col">
+                                  <input type="checkbox" class="ipt-form" id="ipt-termos-politica-privacidade" name="terms">
+                                  <label for="ipt-termos-politica-privacidade" class="label-ipt label-ipt-termos-politica-privacidade">
+                                    Ao enviar o formulário você concorda em receber contato pelos meios informado
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="form-group form-group-btn-submit">
+                          <div class="fg-row">
+                              <div class="fg-col">
+                                  <button id="btn-cadastro">Cadastrar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
               </div>
 
             </div>
