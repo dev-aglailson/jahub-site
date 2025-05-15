@@ -17,7 +17,7 @@
 }
 .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col {
   width: 100%;
-  padding: 10px 0;
+  padding: 13px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +67,7 @@
 .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form-lead-partner .form-group-btn-submit .fg-row .fg-col{
   align-items: center;
 }
-.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form-lead-partner .form-group-btn-submit #btn-cadastro{
+.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form-lead-partner .form-group-btn-submit #btn-cadastro-lead-partner{
   padding: 0.65em 1em;
   border-radius: 0.5em;
   font-size: 0.95em;
@@ -78,4 +78,54 @@
   border-radius: 4px;
   cursor: pointer;
   width: 150px;
+}
+
+.section-seja-parceiro .container .row-container.row-container-redes-sociais .content-redes-sociais{
+  padding-top: 20px;
+}
+.section-seja-parceiro .container .row-container.row-container-redes-sociais .content-redes-sociais .list-redes{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.section-seja-parceiro .container .row-container.row-container-redes-sociais .content-redes-sociais .list-redes .item-lista{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.section-seja-parceiro .container .row-container.row-container-redes-sociais .content-redes-sociais .list-redes .item-lista a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 990px) {
+  .section-seja-parceiro .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form{
+    
+  }
+  .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group.form-group-names .fg-row{
+    display: flex;
+  }
+  .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col{
+    padding: 10px;
+  }
+
+  .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col-nome,
+  .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form .form .form-group .fg-row .fg-col-celular{
+    min-width: 250px;
+    max-width: 250px;
+  }
+
 }

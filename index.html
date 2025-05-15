@@ -17,7 +17,9 @@
   <link rel="stylesheet" href="resources/style/css/section-home.css">
   <link rel="stylesheet" href="resources/style/css/section-sobre.css">
   <link rel="stylesheet" href="resources/style/css/section-seja-parceiro.css">
+  <link rel="stylesheet" href="resources/style/css/rodape.css">
   <link rel="stylesheet" href="resources/style/css/animations.css">
+  <link rel="stylesheet" href="resources/lib/toastify-js/css/toastify.min.css">
   <script src="resources/js/cabecalho.js"></script>
   <script src="resources/js/main.js"></script>
   <link rel="preload" as="script" href="resources/js/animations.js">
@@ -171,7 +173,8 @@
 
               <div class="content-section">
                 <div class="vantagens-plataforma list-section">
-                  <h4 class="title-lista"> Tudo o que você precisa para gerenciar suas telas e ganhos na hora e lugar que
+                  <h4 class="title-lista"> Tudo o que você precisa para gerenciar suas telas e ganhos na hora e lugar
+                    que
                     quiser.</h4>
                   <ul class="lista-vantagens">
                     <li class="item-lista"><span class="icon-item"></span> Gerencie as exibições em tempo real</li>
@@ -241,57 +244,89 @@
                 <p class="animation-right-to-left title" animationTime=".7s">
                   Seja nosso parceiro
                 </p>
-                  <h4 class="subtitle"> Preencha as informações abaixo. Entraremos em contato assim que possível. </h4>
+                <h4 class="subtitle"> Preencha as informações abaixo. Entraremos em contato assim que possível. </h4>
               </div>
 
               <div class="content-form">
-                  <form method="post" class="form form-lead-partner" id="form-cadastro">
-                      <div class="form-group form-group-names">
-                          <div class="fg-row">
-                              <div class="fg-col">
-                                  <div class="content-fg-col">
-                                      <label for="#ipt-nome" class="label-ipt label-ipt-nome">Nome</label>
-                                      <input type="text" class="ipt-form" id="ipt-nome" name="nome" placeholder="Seu nome">
-                                  </div>
-                              </div>
-                              <div class="fg-col">
-                                <div class="content-fg-col">
-                                  <label for="#ipt-email" class="label-ipt label-ipt-email">E-mail</label>
-                                  <input type="text" class="ipt-form" id="ipt-email" name="email" placeholder="Seu e-mail">
-                                </div>
-                              </div>
-                          </div>
+                <form class="form form-lead-partner" id="form-cadastro-lead">
+                  <div class="form-group form-group-names">
+                    <div class="fg-row">
+                      <div class="fg-col fg-col-nome">
+                        <div class="content-fg-col">
+                          <label for="#ipt-nome" class="label-ipt label-ipt-nome">Nome</label>
+                          <input type="text" class="ipt-form" id="ipt-nome" name="nome" placeholder="Seu nome">
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <div class="fg-row">
-                              <div class="fg-col">
-                                  <label for="#ipt-celular" class="label-ipt label-ipt-celular">Celular</label>
-                                  <input type="text" class="ipt-form" id="ipt-celular" name="celular" placeholder="Seu número de celular com DD">
-                              </div>
-                          </div>
+                      <div class="fg-col fg-col-email">
+                        <div class="content-fg-col">
+                          <label for="#ipt-email" class="label-ipt label-ipt-email">E-mail</label>
+                          <input type="email" class="ipt-form" id="ipt-email" name="email" placeholder="Seu e-mail">
+                        </div>
                       </div>
-                      
-                      <div class="form-group form-group-politicas-privacidade">
-                          <div class="fg-row">
-                              <div class="fg-col">
-                                  <input type="checkbox" class="ipt-form" id="ipt-termos-politica-privacidade" name="terms">
-                                  <label for="ipt-termos-politica-privacidade" class="label-ipt label-ipt-termos-politica-privacidade">
-                                    Ao enviar o formulário você concorda em receber contato pelos meios informado
-                                  </label>
-                              </div>
-                          </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="fg-row">
+                      <div class="fg-col fg-col-celular">
+                        <label for="#ipt-celular" class="label-ipt label-ipt-celular">Celular</label>
+                        <input type="text" class="ipt-form mask-celular" id="ipt-celular" name="celular"
+                          placeholder="Celular com DD">
                       </div>
+                    </div>
+                  </div>
 
-                      <div class="form-group form-group-btn-submit">
-                          <div class="fg-row">
-                              <div class="fg-col">
-                                  <button id="btn-cadastro">Cadastrar</button>
-                              </div>
-                          </div>
+                  <div class="form-group form-group-politicas-privacidade">
+                    <div class="fg-row">
+                      <div class="fg-col">
+                        <input type="checkbox" class="ipt-form" id="ipt-termos-politica-privacidade" name="terms">
+                        <label for="ipt-termos-politica-privacidade"
+                          class="label-ipt label-ipt-termos-politica-privacidade">
+                          Ao enviar o formulário você concorda em receber contato pelos meios informado
+                        </label>
                       </div>
-                  </form>
+                    </div>
+                  </div>
+
+                  <div class="form-group form-group-btn-submit">
+                    <div class="fg-row">
+                      <div class="fg-col">
+                        <button id="btn-cadastro-lead-partner">Enviar</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
 
+            </div>
+          </div>
+        </div>
+
+        <div class="row-container row-container-redes-sociais">
+          <div class="col-box-content col-box-content-redes-sociais">
+            <div class="box-content box-content-redes-sociais">
+              <div class="titles">
+                <p class="animation-right-to-left title" animationTime=".7s">
+                  Nossas redes socias
+                </p>
+                <h4 class="subtitle">Fique por dentro das novidades sobre automação de anúncios indoor e gestão de
+                  telas. </h4>
+              </div>
+              <div class="content-redes-sociais">
+                <ul class="list-redes">
+                  <li class="item-lista">
+                    <a href="https://www.instagram.com/jahub.io" target="_blank" rel="noopener noreferrer"
+                      style="background-image: url(resources/img/tema/icon-insta.svg);">
+
+                    </a>
+                  </li>
+                  <li class="item-lista">
+                    <a href="https://www.instagram.com/jahub.io" target="_blank" rel="noopener noreferrer"
+                      style="background-image: url(resources/img/tema/icon-facebook.svg);">
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -303,9 +338,80 @@
         </button>
       </div>
 
+      <div class="container-preloader" id="container-preloader">
+        <div class="content">
+          <div class="spinner"></div>
+          <div class="box-mensagem-loanding">
+            <span class="mensagem-loanding">Carregando...</span>
+          </div>
+        </div>
+      </div>
+
   </main>
 
-  <!--{{footer}}-->
+  <footer class="container-section container-section-footer">
+    <div class="content-section content-section-footer">
+      <div class="section section-footer">
+        <span id="copytext">&copy; 2025 - Todos os direitos reservados - Jahub.io, Veiculação e automatização de
+          mídias DOOH.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /**
+     * Função responsável por exibir mensagens
+     * @uthor Zé Aglailson 
+     * @param type tipo de mensagem [success=sucesso | error=error]
+     * @param message mensagem a ser exibida
+     */
+    function showMessage(type, message, duration = 3000) {
+      let options = {
+        text: message,
+        duration: duration,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "left",
+        stopOnFocus: true,
+      };
+      switch (type) {
+        case 'error':
+          options.style = {
+            background: "linear-gradient(to right, #ff6961, #ff3642)"
+          };
+          break;
+        case 'success':
+          options.style = {
+            background: "linear-gradient(to right, #77dd77, #61c261)"
+          };
+          break;
+        case 'info':
+          options.style = {
+            background: "linear-gradient(to right, #00aaff, #00aaff)"
+          };
+          break;
+      }
+      Toastify(options).showToast();
+    }
+    class Preload {
+      constructor() {
+        this.preloaderElement = document.getElementById('container-preloader');
+        this.preloaderBoxMensagem = this.preloaderElement.querySelector('.mensagem-loanding');
+      }
+
+      show(label) {
+        this.preloaderBoxMensagem.innerHTML = label;
+        this.preloaderElement.style.display = 'flex';
+      }
+
+      hide() {
+        this.preloaderElement.style.display = 'none';
+      }
+    }
+
+    const preloader = new Preload();
+  </script>
 
   <!-- Jquery -->
   <link rel="preload" as="script" href="resources/lib/jquery/jquery-3.6.0.min.js">
@@ -320,8 +426,10 @@
   <script src="resources/js/mascaras.js"></script>
   <!-- Configuração dos sliders -->
   <script src="resources/js/sliders.js"></script>
+  <script src="resources/js/form-lead-partner.js"></script>
   <link rel="preload" as="script" href="resources/lib/swiper/js/swiper-v8-bundle.min.js">
   <script src="resources/lib/swiper/js/swiper-v8-bundle.min.js"></script>
+  <script src="resources/lib/toastify-js/js/toastify.js"></script>
 </body>
 
 </html>

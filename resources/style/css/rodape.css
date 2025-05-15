@@ -1,21 +1,22 @@
-.container-rodape {
-  margin-top: 30vh;
-  padding: 15px;
-  background-color: #444;
+.container-section-footer .content-section-footer .section-footer{
+  padding: 20px;
 }
-@media screen and (min-width: 990px) {
-  .container-rodape {
-    padding: 15px 60px;
-  }
+.container-section-footer .content-section-footer .section-footer #copytext {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7em;
+  color: #6e7891;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-@media screen and (min-width: 1280px) {
-  .container-rodape {
-    padding: 15px 0;
-  }
-  .container-rodape .content-rodape {
-    width: 1280px;
-    margin: 0 auto;
-  }
+.container-section-footer .content-section-footer .section-footer #app-version {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7em;
+  color: #444444;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
-/*# sourceMappingURL=rodape.css.map */
