@@ -200,11 +200,6 @@
 }
 
 @media screen and (min-width: 990px) {
-  .container-cabecalho {
-    background: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
-    backdrop-filter: blur(10px);
-  }
   .container-cabecalho .content-logo-btn-menu .btn-menu {
     display: none;
   }
@@ -242,7 +237,11 @@
   }
   .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
     font-size: 1em;
-    color: #444;
+    color: #FFFFFF;
+  }
+  .container-cabecalho.container-cabecalho-dark .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
+    font-size: 1em;
+    color: #000000;
   }
   .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item:last-child {
     margin-right: 0;
