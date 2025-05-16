@@ -31,6 +31,8 @@ window.addEventListener('load', function () {
   function fieldsValidator(formLead) {
     return new Promise((resolve, reject) => { // <-- Adicionado o return aqui
       let dados = {
+        origem: "site",
+        perfil: "partner",
         nome: formLead['ipt-nome'].value,
         email: formLead['ipt-email'].value,
         celular: formLead['ipt-celular'].value,
@@ -56,10 +58,20 @@ window.addEventListener('load', function () {
 
   function sendData(dados){
     return new Promise((resolve, reject) => {
-      showMessage('success', 'Dados enviado com sucesso!')
-      setTimeout(() => {
-        resolve()
-      }, 2000);
+      $.ajax({
+        url: 'https://jahub.app/api/v1/internal/contact/lead',
+        type: 'POST',
+        async: true,
+        dataType: 'json',
+        data: dados,
+        success: function (data) {
+          showMessage('success', data.message)
+          resolve();
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          //return reject(new Error(message));
+        }
+      });
     })
   }
 

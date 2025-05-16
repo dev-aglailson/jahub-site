@@ -4,8 +4,8 @@
   background: #FFFFFF;
 }
 
-.section-seja-parceiro .container .row-container .col-box-content .box-content .content-form{
-
+.section-seja-parceiro .container .row-container.row-container-seja-parceiro{
+  height: 100vh;
 }
 
 .section-seja-parceiro .container .row-container .col-box-content .box-content .content-form {
@@ -104,6 +104,9 @@
 }
 
 @media screen and (min-width: 990px) {
+  .section-seja-parceiro .container .row-container.row-container-seja-parceiro{
+    height: auto;
+  }
   .section-seja-parceiro .container{
     display: flex;
     justify-content: space-between;
