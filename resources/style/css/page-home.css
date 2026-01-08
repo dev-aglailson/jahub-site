@@ -39,6 +39,12 @@ a {
   padding-top: 0;
   font-family: "Inter", sans-serif;
 }
+.section .container{
+  background-color: #FFFFFF;
+}
+.section.section-home .container{
+  background-color: transparent;
+}
 .section .container .row-container {
   display: flex;
   flex-direction: column;
