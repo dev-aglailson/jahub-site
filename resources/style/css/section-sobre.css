@@ -132,33 +132,52 @@
   color: #1F2B35;
   margin-bottom: 30px;
 }
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma{
+  margin-bottom: 20px;
+}
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .title-lista {
   font-family: "Inter", sans-serif;
   font-weight: normal;
   margin-bottom: 20px;
+  font-size: 1.5em;
 }
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens {
   display: flex;
   flex-direction: column;
 }
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista {
-  font-family: "Poppins", sans-serif;
-  color: #6F8394;
-  margin-bottom: 14px;
+  border-left: 3px solid #d1d5db;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding: 10px;
 }
-.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .icon-item {
-  display: block;
-  min-width: 16px;
-  max-width: 16px;
-  min-height: 12px;
-  max-height: 12px;
-  margin-right: 4px;
-  background-image: url(../../img/tema/chevron.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    background: none;
+}
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .title-item{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #282e38;
+  cursor: pointer;
+}
+
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .content-item {
+  display: flex;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  max-height: 0;
+}
+
+
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .content-item .subtitle-item {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #465161;
 }
 
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .background-ilustration img{
