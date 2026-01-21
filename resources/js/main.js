@@ -55,49 +55,53 @@ window.addEventListener('load', function () {
 
   //ANIMAÇÃO ACRODION SEÇÃO SOBRE
   function secaoSobreItensAcordion(){
-    var listaVantagens = document.getElementById('lista-vantagens-section-sobre');
+    var listasVantagens = document.querySelectorAll('.lista-vantagens-section-sobre');
 
-    let btnsVantagens = listaVantagens.querySelectorAll('.title-item');
-    let detalhesItens = listaVantagens.querySelectorAll('.content-item');
+    listasVantagens.forEach(listaVantagens => {      
+      let btnsVantagens = listaVantagens.querySelectorAll('.title-item');
+      let detalhesItens = listaVantagens.querySelectorAll('.content-item');
+      
+      console.log(listaVantagens)
 
-    let itensLi = listaVantagens.querySelectorAll('.item-lista');
-    itensLi[0].style.borderLeft = '3px solid #00aaff';
-    detalhesItens[0].style.maxHeight = detalhesItens[0].scrollHeight + 'px';
-
-    btnsVantagens.forEach(btnItem => {
-
-      btnItem.addEventListener('click', function () {
-
-        var liItem = btnItem.closest('.item-lista');
-        var detalheLiItem = btnItem.nextElementSibling
-
-        let alturaDivDetalheLiItem = !!detalheLiItem.style.maxHeight
-
-        if (alturaDivDetalheLiItem) {
-          detalheLiItem.style.maxHeight = null;
-          liItem.style.borderLeft = '3px solid #d1d5db';
-        } else {
-
-          detalhesItens.forEach(detalhe => {
-
-            let altura = detalhe.style.maxHeight;
-
-            if (altura) {
-              detalhe.style.maxHeight = null;
-
-
-              const li = detalhe.closest('.item-lista');
-              li.style.borderLeft = '3px solid #d1d5db';
-
-            }
-          })
-
-          detalheLiItem.style.maxHeight = detalheLiItem.scrollHeight + 'px';
-          liItem.style.borderLeft = '3px solid #00aaff';
-        }
+      let itensLi                     = listaVantagens.querySelectorAll('.item-lista');
+      itensLi[0].style.borderLeft     = '3px solid #00aaff';
+      detalhesItens[0].style.maxHeight= detalhesItens[0].scrollHeight + 'px';
+  
+      btnsVantagens.forEach(btnItem => {
+  
+        btnItem.addEventListener('click', function () {
+  
+          var liItem = btnItem.closest('.item-lista');
+          var detalheLiItem = btnItem.nextElementSibling
+  
+          let alturaDivDetalheLiItem = !!detalheLiItem.style.maxHeight
+  
+          if (alturaDivDetalheLiItem) {
+            detalheLiItem.style.maxHeight = null;
+            liItem.style.borderLeft = '3px solid #d1d5db';
+          } else {
+  
+            detalhesItens.forEach(detalhe => {
+  
+              let altura = detalhe.style.maxHeight;
+  
+              if (altura) {
+                detalhe.style.maxHeight = null;
+  
+  
+                const li = detalhe.closest('.item-lista');
+                li.style.borderLeft = '3px solid #d1d5db';
+  
+              }
+            })
+  
+            detalheLiItem.style.maxHeight = detalheLiItem.scrollHeight + 'px';
+            liItem.style.borderLeft = '3px solid #00aaff';
+          }
+        })
+  
       })
-
-    })
+    });
 
   }
 
