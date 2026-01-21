@@ -27,6 +27,10 @@
 
 .section-home .container .row-container .content-titles-btns-acoes .subtitle {
   color: #FFFFFF;
+  border: 2px dashed #00aaff;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .section-home .container .row-btns-acoes {

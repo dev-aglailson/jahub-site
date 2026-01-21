@@ -1,4 +1,5 @@
 window.addEventListener('load', function(){
+  console.log('aquiiii')
     const cabecalho = document.querySelector('.container-cabecalho')
     var alturaCabecalho = cabecalho.offsetHeight
     var posicaoScrollAtual = 0
