@@ -164,6 +164,7 @@
   font-weight: 600;
   color: #282e38;
   cursor: pointer;
+  border-bottom: 1px solid #efefef;
 }
 
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .content-item {
@@ -182,6 +183,11 @@
 
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .background-ilustration .midia-ilustration{
   border-radius: 8px;
+}
+
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .background-ilustration .midia-ilustration.midia-ilustration-central-exibicao,
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .background-ilustration .midia-ilustration.midia-ilustration-retorno{
+  border: 2px solid #00aaff;
 }
 
 @media screen and (min-width: 768px){
