@@ -66,6 +66,9 @@ window.addEventListener('load', function () {
         data: dados,
         success: function (data) {
           showMessage('success', data.message)
+
+          fbq('track', 'Lead');
+
           resolve();
         },
         error: function (jqXHR, textStatus, errorThrown) {
