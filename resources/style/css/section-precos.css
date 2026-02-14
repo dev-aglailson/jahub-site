@@ -1,0 +1,180 @@
+.section-precos {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-precos/fim-section-precos;
+  background-color: #F6F8FA;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .title-ilustration p{
+  line-height: 35px;
+  font-size: 32px;
+  font-weight: 900;
+  color: #1F2B35;
+  margin-bottom: 30px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma{
+  margin-bottom: 20px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .title-lista {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos{
+  display: flex;
+  flex-direction: column;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos{
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .header-plano{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .header-plano .icon-header{
+  width: 1.2em;
+  height: 1.2em;
+  background-image: url(../../img/tema/circle-check-white.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .header-plano .title-plano{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #FFFFFF;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner
+.content-plano .header-plano{
+  background-color: #00aaff;
+
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco{
+  width: 100%;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-de{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #efefef;
+  position: relative;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-de .value-preco,
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-de .moeda-preco,
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-de .label-mensalidade{
+  color: #ccc;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-de .value-preco::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #1F2B35;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(5deg);
+}
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-de .value-preco::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #1F2B35;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(-5deg);
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-por{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #efefef;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-por .value-preco{
+  line-height: 35px;
+  font-size: 32px;
+  font-weight: 900;
+  color: #1F2B35;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-por .moeda-preco,
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-por .label-mensalidade{
+  font-weight: 600;
+  color: #282e38;
+  cursor: pointer;
+}
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-preco .content-preco-por .label-mensalidade{
+  align-self: flex-end;
+}
