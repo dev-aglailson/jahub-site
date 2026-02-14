@@ -2,7 +2,6 @@ window.addEventListener('load', async function () {
 
   await montarPlanos(dataPlanos)
 
-  console.log('aquii')
   let boxesPlanos = document.querySelectorAll('.item-lista-planos')
 
   boxesPlanos.forEach(boxPlano => {
@@ -26,7 +25,7 @@ const dataPlanos = {
         label:'Checkout de Anúncios para possiveis anúnciantes',
         descricao:'Anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma.',
         detalhes_modal:{
-          descricao:'Com a funcionalidade monetização ativa, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
+          descricao:'Com a funcionalidade monetização ativada, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
           imagens:[
             {
               url:"resources/img/tema/planos/owner/especificacoes/checkout/checkout-rapido.jpg",
@@ -50,6 +49,8 @@ const dataPlanos = {
         detalhes_modal:{
           descricao:`Visualize em tempo real o que está sendo exibido e o que
               será exibido na sequência, através de uma timeline organizada com a ordem e o tempo de cada mídia.
+              <br>
+              <br>
               Além disso, gerencie as programações com facilidade: cada programação organiza as inserções pagas,
               como por exemplo as exibições dos anunciantes do dia atual.`,
           imagens:[
@@ -64,6 +65,192 @@ const dataPlanos = {
             {
               url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao-exibicao.jpg",
               alt:"imagem 3"
+            }
+          ]
+        }
+      },
+      gerenciamento_instacias:{
+        hash:"gerenciamento_instacias",
+        label:'Gerenciamento individual dos pontos de exibição',
+        descricao:'Gerenciamento individual em casos com mais de um ponto de exibição ativo.',
+        detalhes_modal:{
+          descricao:`Controle cada ponto de exibição de forma individual, ativando ou desativando a exibição nas telas conforme sua necessidade.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/gerenciamento-instancias/ponto-de-exibicao.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      suporte:{
+        hash:"suporte",
+        label:'Suporte de segunda a sexta <span style="color:#00aaff;">em horário comercial</span>',
+        descricao:'Atendimento disponível em dias úteis para auxiliar na operação e dúvidas da plataforma <span style="color:#00aaff;">em horário comercial.</span>',
+        detalhes_modal:{
+          descricao:`Atendimento disponível em dias úteis, <span style="color:#00aaff;">em horário comercial</span>, para auxiliar na operação da plataforma, 
+                      esclarecer dúvidas, orientar sobre configurações e oferecer suporte sempre que necessário, garantindo 
+                      que seus pontos de exibição funcionem corretamente e sem interrupções.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/suporte/img-suporte-whatsapp-owner.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      midias_default:{
+        hash:"midias_default",
+        label:'Até <span style="color:#00aaff;">8 mídias</span> padrão ativas',
+        descricao:`Permite cadastrar até <span style="color:#00aaff;">8 anúncios</span> próprios, como promoções, produtos ou campanhas, que ficam 
+        rodando automaticamente nas telas ao longo do dia.`,
+        detalhes_modal:{
+          descricao:`Permite cadastrar até <span style="color:#00aaff;">8 anúncios</span> próprios, como promoções da sua loja, divulgação de produtos, 
+          campanhas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
+          do dia, seguindo as prioridades definidas por peso, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      quantidade_instancias:{
+        hash:"quantidade_instancias",
+        label:`Controle <span style="color:#00aaff;">até 2</span> TVs/pontos de exibição`,
+        descricao:`Permite <span style="color:#00aaff;">até 2 telas</span> conectadas exibindo anúncios simultaneamente.`,
+        detalhes_modal:{
+          descricao:`Permite conectar <span style="color:#00aaff;">até 2 telas</span> ao mesmo plano, exibindo anúncios simultaneamente e de 
+          forma sincronizada. Ideal para quem possui mais de um ponto de exibição no estabelecimento e deseja gerenciar tudo em um único painel, 
+          garantindo que os conteúdos sejam reproduzidos automaticamente em ambas as telas.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-owner.jpg",
+              alt:"imagem 2"
+            }
+          ]
+        }
+      }
+    }
+  },
+  agency:{
+    hash:'agency',
+    cor:'#845adf',
+    titulo:'Profissional',
+    preco_de:189.90,
+    preco_por:159.90,
+    descricao:'Ideal para gestores de mídia indoor que já possuem telas instaladas e desejam gerenciar conteúdos de forma remota, profissional e escalável.',
+    label_btn_acao:'Começar agora',
+    especificacoes:{
+      checkout:{
+        hash:"checkout",
+        label:'Checkout de Anúncios para possiveis anúnciantes',
+        descricao:'Anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma.',
+        detalhes_modal:{
+          descricao:'Com a funcionalidade monetização ativada, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/checkout-rapido.jpg",
+              alt:"imagem 1"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/confgis-monetizacao.jpg",
+              alt:"imagem 2"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/listagem-repasses.jpg",
+              alt:"imagem 3"
+            }
+          ]
+        }
+      },
+      monitoramento:{
+        hash:"monitoramento",
+        label:'Monitoramento em tempo real via painel',
+        descricao:'Acompanhe as exibições em tempo real diretamente pelo painel da plataforma.',
+        detalhes_modal:{
+          descricao:`Visualize em tempo real o que está sendo exibido e o que
+              será exibido na sequência, através de uma timeline organizada com a ordem e o tempo de cada mídia.
+              <br>
+              <br>
+              Além disso, gerencie as programações com facilidade: cada programação organiza as inserções pagas,
+              como por exemplo as exibições dos anunciantes do dia atual.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-timeline.jpg",
+              alt:"imagem 1"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao.jpg",
+              alt:"imagem 2"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao-exibicao.jpg",
+              alt:"imagem 3"
+            }
+          ]
+        }
+      },
+      gerenciamento_instacias:{
+        hash:"gerenciamento_instacias",
+        label:'Gerenciamento individual dos pontos de exibição',
+        descricao:'Gerenciamento individual em casos com mais de um ponto de exibição ativo.',
+        detalhes_modal:{
+          descricao:`Controle cada ponto de exibição de forma individual, ativando ou desativando a exibição nas telas conforme sua necessidade.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/gerenciamento-instancias/ponto-de-exibicao.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      suporte:{
+        hash:"suporte",
+        label:'Suporte de segunda a sexta <span style="color:#845adf;">24h por dia</span>',
+        descricao:'Atendimento disponível em dias úteis para auxiliar na operação e dúvidas da plataforma <span style="color:#845adf;">24h por dia.</span>',
+        detalhes_modal:{
+          descricao:`Atendimento disponível em dias úteis, <span style="color:#845adf;">em horário comercial</span>, para auxiliar na operação da plataforma, 
+                      esclarecer dúvidas, orientar sobre configurações e oferecer suporte sempre que necessário, garantindo 
+                      que seus pontos de exibição funcionem corretamente e sem interrupções.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/suporte/img-suporte-whatsapp-agency.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      midias_default:{
+        hash:"midias_default",
+        label:'Até <span style="color:#845adf;">15 mídias</span> padrão ativas',
+        descricao:`Permite cadastrar até <span style="color:#845adf;">15 anúncios</span>  próprios, como promoções, produtos ou campanhas, que ficam 
+        rodando automaticamente nas telas ao longo do dia.`,
+        detalhes_modal:{
+          descricao:`Permite cadastrar até <span style="color:#845adf;">15 anúncios</span> próprios, como promoções da sua loja, divulgação de produtos, 
+          campanhas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
+          do dia, seguindo as prioridades definidas por peso, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      quantidade_instancias:{
+        hash:"quantidade_instancias",
+        label:`Controle <span style="color:#845adf;">até 8</span> TVs/pontos de exibição`,
+        descricao:`Permite <span style="color:#845adf;">até 8 telas</span> conectadas exibindo anúncios simultaneamente.`,
+        detalhes_modal:{
+          descricao:`Permite conectar <span style="color:#845adf;">até 8 telas</span> ao mesmo plano, exibindo anúncios simultaneamente e de 
+          forma sincronizada. Ideal para quem possui mais de um ponto de exibição no estabelecimento e deseja gerenciar tudo em um único painel, 
+          garantindo que os conteúdos sejam reproduzidos automaticamente em ambas as telas.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-agency.jpg",
+              alt:"imagem 2"
             }
           ]
         }
