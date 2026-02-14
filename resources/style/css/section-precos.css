@@ -1,7 +1,7 @@
 .section-precos {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-precos/fim-section-precos;
-  background-color: #F6F8FA;
+  background-color: #FFFFFF;
 }
 
 .section-precos .container .row-container-precos .col-titles-box-ilustration {
@@ -423,7 +423,14 @@ div.tooltip:hover span.info-label {
 }
 
 div.tooltip span.info-label .btn-demonstracao-especificacao {
-  color: #00aaff;
+  display: flex;
+  margin-top: 4px;
+  border: 1px solid #00f968;
+  padding: 4px 10px;
+  color: #00f968;
+  background: rgba(0, 249, 104, 0.3);
+  text-decoration: underline;
+  border-radius: 4px;
 }
 
 .btn-menu-x {
