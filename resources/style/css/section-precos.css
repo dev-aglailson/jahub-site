@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .title-ilustration p{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .title-ilustration p {
   line-height: 35px;
   font-size: 32px;
   font-weight: 900;
@@ -17,12 +17,12 @@
   margin-bottom: 30px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section {
   display: flex;
   flex-direction: column;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma {
   margin-bottom: 20px;
 }
 
@@ -33,20 +33,19 @@
   font-size: 1.5em;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px){
- .section-precos .container .row-container-precos .col-titles-box-ilustration 
- .box-ilustration .content-section .precos-plataforma .lista-planos{
-  flex-direction: row;
-  justify-content: space-around;
- }
+
+@media screen and (min-width: 768px) {
+  .section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos {
   max-width: 400px;
   width: 100%;
   display: flex;
@@ -56,27 +55,21 @@
   margin-bottom: 30px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .header-plano{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .header-plano {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .header-plano .icon-header{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .header-plano .icon-header {
   width: 1.3em;
   height: 1.3em;
   background-image: url(../../img/tema/circle-check-white.svg);
@@ -84,25 +77,19 @@
   background-position: center;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .header-plano .title-plano{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .header-plano .title-plano {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.3em;
   color: #FFFFFF;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco {
   width: 100%;
   padding: 0 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -110,30 +97,18 @@
   position: relative;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de .value-preco{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de .value-preco {
   font-size: 1.2em;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de .value-preco,
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de .moeda-preco,
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de .label-mensalidade{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de .value-preco,
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de .moeda-preco,
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de .label-mensalidade {
   color: #ccc;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de .value-preco::after,
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de .value-preco::before{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de .value-preco::after,
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de .value-preco::before {
   content: "";
   width: 100%;
   height: 2px;
@@ -144,93 +119,68 @@
   top: 50%;
   transform: rotate(5deg);
 }
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-de .value-preco::before{
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-de .value-preco::before {
   transform: rotate(-5deg);
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-por{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-por {
   display: flex;
   justify-content: center;
   padding: 30px 0;
   border-bottom: 1px solid #efefef;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-por .value-preco{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-por .value-preco {
   line-height: 35px;
   font-size: 32px;
   font-weight: 900;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-por .moeda-preco,
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-por .label-mensalidade{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-por .moeda-preco,
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-por .label-mensalidade {
   font-weight: 600;
   cursor: pointer;
 }
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-preco .content-preco-por .label-mensalidade{
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-preco .content-preco-por .label-mensalidade {
   align-self: flex-end;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-descricao{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-descricao {
   padding: 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-descricao .content-descricao{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-descricao .content-descricao {
   padding: 10px;
   background: #efefef;
   border-radius: 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-descricao .content-descricao .descricao{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-descricao .content-descricao .descricao {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   color: #465161;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes {
   padding: 10px 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes {
   width: 100%;
   display: flex;
   margin-bottom: 15px;
   align-items: center;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes 
-.icon-especificacao{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .icon-especificacao {
   width: 16px;
   height: 16px;
   background-image: url(../../img/tema/check.svg);
@@ -238,10 +188,7 @@
   background-position: center;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-title{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-title {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -249,29 +196,20 @@
   padding-right: 3px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-title .label-especificacao{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-title .label-especificacao {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   color: #465161;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao {
   top: -110%;
   left: -110%;
   width: 100%;
@@ -287,20 +225,14 @@
   overflow: hidden;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao-opened{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao-opened {
   top: 0;
   left: 0;
   transition: 0.4s;
   opacity: 1;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao .content-modal{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -310,10 +242,7 @@
   padding: 0 4%;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos {
   width: 100%;
   max-width: 420px;
   height: 90%;
@@ -323,31 +252,19 @@
   overflow-x: auto;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
-.div-btn-close{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos .div-btn-close {
   width: 100%;
   display: flex;
   justify-content: end;
   margin-bottom: 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
-.div-btn-close .btn-menu-x{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos .div-btn-close .btn-menu-x {
   border: 1px solid #444444;
   background-image: url(../../img/tema/circle-x-dark.svg);
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
-.title-item.title-item-modal{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos .title-item.title-item-modal {
   display: flex;
   font-size: 1em;
   padding-left: 5px;
@@ -357,44 +274,43 @@
   margin-bottom: 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
-.content-descricao-item{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos .content-descricao-item {
   padding: 10px;
-  background: #efefef;
+  background: #465161;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
-.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
-.content-descricao-item .descricao{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos .content-descricao-item .descricao {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  color: #465161;
+  color: #efefef;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-btns-acoes{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos .preview-imgs-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes .content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos .preview-imgs-item img.imagem {
+  width: 45%;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-btns-acoes {
   padding: 20px 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-btns-acoes .content-btn-principal{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-btns-acoes .content-btn-principal {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-btns-acoes .content-btn-principal .btn-principal{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-btns-acoes .content-btn-principal .btn-principal {
   min-width: 230px;
   padding: 10px 15px;
   border: none;
@@ -405,61 +321,43 @@
   cursor: pointer;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-btns-acoes .content-btn-principal .btn-principal a{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-btns-acoes .content-btn-principal .btn-principal a {
   color: #FFFFFF;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
-.content-plano .box-btns-acoes .content-btn-principal .btn-principal:hover{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos .content-plano .box-btns-acoes .content-btn-principal .btn-principal:hover {
   transform: scale(1.1);
 }
 
 /* Especificidades por plano owner */
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner
-.content-plano .header-plano{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner .content-plano .header-plano {
   background-color: #00aaff;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner
-.content-plano .box-preco{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner .content-plano .box-preco {
   color: #00aaff;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner
-.content-plano .box-btns-acoes .content-btn-principal .btn-principal{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner .content-plano .box-btns-acoes .content-btn-principal .btn-principal {
   background-color: #00aaff;
 }
 
 /* Fim especificidades por plano owner */
 
 /* Especificidades por plano agency */
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency
-.content-plano .header-plano{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency .content-plano .header-plano {
   background-color: #845adf;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency
-.content-plano .box-preco{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency .content-plano .box-preco {
   color: #845adf;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency
-.content-plano .box-btns-acoes .content-btn-principal .btn-principal{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency .content-plano .box-btns-acoes .content-btn-principal .btn-principal {
   background-color: #845adf;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency
-.content-plano .box-btns-acoes .content-info-recomendado{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency .content-plano .box-btns-acoes .content-info-recomendado {
   display: flex;
   width: 100%;
   padding: 10px;
@@ -467,9 +365,7 @@
   margin-bottom: 10px;
 }
 
-.section-precos .container .row-container-precos .col-titles-box-ilustration 
-.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency
-.content-plano .box-btns-acoes .content-info-recomendado .label-recomendado{
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-agency .content-plano .box-btns-acoes .content-info-recomendado .label-recomendado {
   color: #845adf;
   padding: 5px;
   border: 1px solid #845adf;
@@ -484,7 +380,7 @@
 
 
 
-div.tooltip{
+div.tooltip {
   width: 20px;
   height: 20px;
   font-size: .8em;
@@ -495,7 +391,7 @@ div.tooltip{
   cursor: pointer;
 }
 
-div.tooltip span.icon{
+div.tooltip span.icon {
   color: #000;
   display: flex;
   justify-content: center;
@@ -506,7 +402,7 @@ div.tooltip span.icon{
 
 }
 
-div.tooltip span.info-label{
+div.tooltip span.info-label {
   display: none;
   position: absolute;
   top: 100%;
@@ -521,12 +417,12 @@ div.tooltip span.info-label{
   z-index: 99;
 }
 
-div.tooltip:hover  span.info-label{
+div.tooltip:hover span.info-label {
   display: flex;
   flex-direction: column;
 }
 
-div.tooltip span.info-label .btn-demonstracao-especificacao{
+div.tooltip span.info-label .btn-demonstracao-especificacao {
   color: #00aaff;
 }
 

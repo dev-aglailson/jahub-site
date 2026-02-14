@@ -14,6 +14,16 @@ window.addEventListener('load', async function () {
 
   })
 
+  const container = document.getElementById('previewContainer');
+
+  const viewer = new Viewer(container, {
+    navbar: true,   // miniaturas
+    toolbar: true,  // botões de zoom
+    title: false,
+    movable: true,
+    zoomable: true,
+    scalable: true,
+  });
 })
 
 function listenActionsEspecificacoesPlano(boxPlano){
