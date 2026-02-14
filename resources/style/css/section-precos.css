@@ -125,7 +125,7 @@
 .section-precos .container .row-container-precos .col-titles-box-ilustration 
 .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
 .content-plano .box-preco .content-preco-de .label-mensalidade{
-  color: #333;
+  color: #ccc;
 }
 
 .section-precos .container .row-container-precos .col-titles-box-ilustration 
@@ -182,6 +182,27 @@
   align-self: flex-end;
 }
 
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-descricao{
+  padding: 10px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-descricao .content-descricao{
+  padding: 10px;
+  background: #efefef;
+  border-radius: 10px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-descricao .content-descricao .descricao{
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #465161;
+}
 
 .section-precos .container .row-container-precos .col-titles-box-ilustration 
 .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
@@ -265,6 +286,7 @@
 .section-precos .container .row-container-precos .col-titles-box-ilustration 
 .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
 .content-plano .box-btns-acoes .content-btn-principal .btn-principal{
+  min-width: 230px;
   padding: 10px 15px;
   border: none;
   color: #FFFFFF;
