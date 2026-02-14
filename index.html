@@ -512,7 +512,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
                         <div class="box-especificacoes">
                           <ul class="lista-especificacoes">
-                            <li class="item-lista-especificacoes">
+                            <li class="item-lista-especificacoes" hash-especifica="monitoramento">
                               <span class="icon-especificacao"></span>
                               <div class="content-title">
                                 <p class="label-especificacao">Monitoramento em tempo real via painel</p>
@@ -522,56 +522,34 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
                                 <div class="tooltip">
                                   <span class="icon">!</span>
                                   <span class="info-label">Acompanhe as exibições em tempo real diretamente pelo painel da plataforma.
-                                    <a href="#" class="btn-demo-especificacao" id="checkout-rapido">Ver demonstração</a>
+                                    <a href="#" class="btn-demonstracao-especificacao" id="btn-open-modal-demonstracao-monitoramento">Ver detalhes</a>
                                   </span>
                                 </div>
-                              </div>
-                            </li>
 
-                            <li class="item-lista-especificacoes">
+                                <!--Essa div tem que ser inteiramente monta via js com base em um json-->
+                                <div class="modal-demonstracao-especificacao" id="modal-demonstracao-especificacao-monitoramento">
+                                  <div class="content-modal">
+                                    <div class="box-container-infos">
+                                      <div class="div-btn-close">
+                                        <button class="btn-close-modal btn-menu-x" id="btn-close-modal-demonstracao-monitoramento" title="Fechar detalhes"></button>
+                                      
+                                      </div>
+                                      <span class="title-item title-item-modal">Monitoramento em tempo real</span>
 
-                              <span class="icon-especificacao"></span>
+                                      <div class="content-descricao-item">
 
-                              <div class="content-title">
-                                <p class="label-especificacao">
-                                  Gerenciamento individual dos pontos de exibição
-                                </p>
-                              </div>
-
-                              <div class="content-tooltip">
-                                <div class="tooltip">
-                                  <span class="icon">!</span>
-                                  <span class="info-label">
-                                    Controle cada ponto de exibição de forma individual, ativando ou desativando telas conforme sua necessidade.
-                                    <a href="#" class="btn-demo-especificacao" id="checkout-rapido">Ver demonstração</a>
-                                  </span>
+                                        <p class="descricao">
+                                          Visualize em tempo real o que está sendo exibido no fluxo(pontos/tvs) e o que será exibido na sequência, através de uma timeline organizada com a ordem e o tempo de cada mídia.
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
 
+                              </div>
                             </li>
-
-                            <li class="item-lista-especificacoes">
-
-                              <span class="icon-especificacao"></span>
-
-                              <div class="content-title">
-                                <p class="label-especificacao">
-                                  Checkout de Anúncios
-                                </p>
-                              </div>
-
-                              <div class="content-tooltip">
-                                <div class="tooltip">
-                                  <span class="icon">!</span>
-                                  <span class="info-label">
-                                    Com monetização ativa, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada conforme a porcentagem acordada.
-                                    <a href="#" class="btn-demo-especificacao" id="checkout-rapido">Ver demonstração</a>
-                                  </span>
-                                </div>
-                              </div>
-
-                            </li>
-
+                            
+                            <!--
                             <li class="item-lista-especificacoes">
 
                               <span class="icon-especificacao"></span>
@@ -636,7 +614,8 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
                                 </div>
                               </div>
 
-                            </li>
+                            </li> 
+                            -->
 
 
                           </ul>
@@ -1045,6 +1024,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
   <!-- Configuração dos sliders -->
   <script src="resources/js/sliders.js"></script>
   <script src="resources/js/form-lead-partner.js"></script>
+  <script src="resources/js/planos.js"></script>
   <link rel="preload" as="script" href="resources/lib/swiper/js/swiper-v8-bundle.min.js">
   <script src="resources/lib/swiper/js/swiper-v8-bundle.min.js"></script>
   <script src="resources/lib/toastify-js/js/toastify.js"></script>

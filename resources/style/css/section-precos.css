@@ -270,6 +270,115 @@
 
 .section-precos .container .row-container-precos .col-titles-box-ilustration 
 .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao{
+  top: -110%;
+  left: -110%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao-opened{
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao .content-modal{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos{
+  width: 100%;
+  max-width: 420px;
+  height: 90%;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
+.div-btn-close{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
+.div-btn-close .btn-menu-x{
+  border: 1px solid #444444;
+  background-image: url(../../img/tema/circle-x-dark.svg);
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
+.title-item.title-item-modal{
+  display: flex;
+  font-size: 1em;
+  padding-left: 5px;
+  border-left: 2px solid #00aaff;
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
+.content-descricao-item{
+  padding: 10px;
+  background: #efefef;
+  border-radius: 10px;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
+.content-plano .box-especificacoes .lista-especificacoes .item-lista-especificacoes
+.content-tooltip .modal-demonstracao-especificacao .content-modal .box-container-infos
+.content-descricao-item .descricao{
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #465161;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration 
+.box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos
 .content-plano .box-btns-acoes{
   padding: 20px 10px;
 }
@@ -417,6 +526,19 @@ div.tooltip:hover  span.info-label{
   flex-direction: column;
 }
 
-div.tooltip span.info-label .btn-demo-especificacao{
+div.tooltip span.info-label .btn-demonstracao-especificacao{
   color: #00aaff;
+}
+
+.btn-menu-x {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #efefef;
+  border-radius: 50%;
+  display: block;
+  background-size: cover;
+  background-image: url(../../img/tema/circle-x.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }

@@ -60,8 +60,6 @@ window.addEventListener('load', function () {
     listasVantagens.forEach(listaVantagens => {      
       let btnsVantagens = listaVantagens.querySelectorAll('.title-item');
       let detalhesItens = listaVantagens.querySelectorAll('.content-item');
-      
-      console.log(listaVantagens)
 
       let itensLi                     = listaVantagens.querySelectorAll('.item-lista');
       itensLi[0].style.borderLeft     = '3px solid #00aaff';
