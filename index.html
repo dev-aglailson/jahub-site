@@ -5,14 +5,94 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Jahub.io | Gerenciamento e automatização de mídias DOOH</title>
+  <title>Mídia indoor e TV corporativa SaaS | Jahub.io</title>
   <meta name="description"
-    content="Jahub.io é uma plataforma SaaS para exibição digital em TVs indoor. Gerencie conteúdos horizontais ou verticais, de forma remota, simples e profissional.">
+    content="Jahub.io é uma plataforma SaaS de mídia indoor e TV corporativa. Gerencie anúncios em TV, campanhas DOOH e telas digitais de forma remota e profissional.">
   <meta name="keywords"
-    content="tv indoor, digital signage, dooh, exibição digital, mídia indoor, anúncios em tv, plataforma saas tv">
+    content="mídia indoor, tv corporativa, sistema de anúncios em tv, dooh, digital signage, tv indoor, comunicação visual em tv, software de mídia indoor, plataforma saas tv, anúncios em telas digitais">
   <meta name="author" content="Jahub Tecnologia LTDA">
   <link rel="canonical" href="https://jahubio.com/">
   <meta name="robots" content="index, follow">
+  <!--Dados estruturados-->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Jahub",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Digital Signage",
+  "operatingSystem": "Web",
+  "url": "https://jahubio.com/",
+  "image": "https://jahubio.com/resources/img/tema/painel-desktop.png",
+  "logo": "https://jahubio.com/resources/img/tema/logo.png",
+  "description": "Plataforma SaaS para gerenciamento de mídia indoor, TV corporativa e campanhas DOOH em telas digitais.",
+  "inLanguage": "pt-BR",
+  "provider": {
+    "@type": "Organization",
+    "name": "Jahub Tecnologia e Sistemas LTDA",
+    "url": "https://jahubio.com/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "BRL",
+    "category": "subscription",
+    "url": "https://jahubio.com/#precos"
+  }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Jahub Tecnologia e Sistemas LTDA",
+  "url": "https://jahubio.com/",
+  "logo": "https://jahubio.com/resources/img/tema/logo.png",
+  "sameAs": [
+    "https://www.instagram.com/jahub.io"
+  ]
+  }
+  </script>
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Preciso de Smart TV para usar a Jahub?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. Qualquer TV com entrada HDMI pode ser usada para exibir anúncios com a nossa plataforma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quantas TVs posso conectar na plataforma?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A quantidade de TVs conectadas depende do plano contratado dentro da plataforma Jahub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A plataforma permite monetizar as telas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Com o módulo de monetização ativo, anunciantes podem contratar espaço de exibição nas telas e realizar o pagamento diretamente pela plataforma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "É possível gerenciar várias telas ao mesmo tempo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. A plataforma permite gerenciar múltiplos pontos de exibição e controlar conteúdos exibidos em tempo real."
+        }
+      }
+    ]
+    }
+  </script>
+  <!--Fim dados estruturados-->
   <!-- Bibliotecas -->
   <link rel="stylesheet" href="resources/lib/swiper/css/swiper-v8-bundle.min.css" />
   <link rel="stylesheet" href="resources/style/css/cabecalho.css">
@@ -26,10 +106,10 @@
   <link rel="stylesheet" href="resources/style/css/animations.css">
   <link rel="stylesheet" href="resources/lib/toastify-js/css/toastify.min.css">
   <link rel="stylesheet" href="resources/lib/viewer-js/css/viewer.min.css">
-  <script src="resources/js/cabecalho.js"></script>
-  <script src="resources/js/main.js"></script>
+  <script src="resources/js/cabecalho.js" defer></script>
+  <script src="resources/js/main.js" defer></script>
   <link rel="preload" as="script" href="resources/js/animations.js">
-  <script src="resources/js/animations.js"></script>
+  <script src="resources/js/animations.js" defer></script>
   <link rel="shortcut icon" href="resources/img/fav-icon.svg" type="image/x-icon">
 
 <!-- Meta Pixel Code -->
@@ -57,7 +137,11 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
     <div class="content-logo-btn-menu">
 
-      <h2 class="logo"><a href="{{URL}}"><span>Link</span>upis <span class="img-logo"></span></a></h2>
+      <div class="logo">
+        <a href="{{URL}}" aria-label="Jahub.io - mídia indoor e TV corporativa">
+          <span>Link</span>upis <span class="img-logo"></span>
+        </a>
+      </div>
 
       <div class="content-menu" id="content-menu" style="display: flex;">
 
@@ -100,7 +184,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
   </header>
 
-  <main class="container-principal">
+  <main class="container-principal" role="main" aria-labelledby="titulo-principal">
 
     <!-- HERO / HOME -->
     <section class="section section-home" id="home" style="padding-top: 82px;">
@@ -111,15 +195,15 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
           <div class="content-titles-btns-acoes">
             <span class="badge-hero">
-              Plataforma SaaS para TVs indoor e anúncios DOOH
+              Plataforma SaaS para TVs indoor, TV corporativa e anúncios DOOH
             </span>
-            <h1 class="title">
-              Mais do que exibir conteúdo. Uma mídia que gera resultado.
+            <h1 id="titulo-principal" class="title">
+              Plataforma de mídia indoor e TV corporativa para seu negócio
             </h1>
-            <p class="subtitle subtitle-highlight">
+            <h2 class="subtitle subtitle-highlight">
               A plataforma para exibição de conteúdos indoor, nos formatos horizontal ou vertical,
               com gestão remota, simples e profissional.
-            </p>
+            </h2>
             <p class="subtitle">
               Transforme suas TVs em um canal de divulgação para mostrar produtos, promoções e até parcerias pagas no
               seu negócio.
@@ -134,11 +218,11 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
           <div class="content-image">
             <div class="background-img ">
-              <img src="resources/img/tema/painel-desktop.png" alt="Painel da Jahub em uso em desktop">
+              <img src="resources/img/tema/painel-desktop.png" alt="Painel Jahub de mídia indoor em uso em desktop">
             </div>
 
             <div class="background-img-large ">
-              <img src="resources/img/tema/painel-mobile.png" alt="Painel da Jahub em uso em smartphone">
+              <img src="resources/img/tema/painel-mobile.png" alt="Painel Jahub de mídia indoor em uso em smartphone">
             </div>
           </div>
         </div>
@@ -164,7 +248,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
     </section>
 
     <!-- SOBRE / O QUE É + COMO FUNCIONA + DIFERENCIAIS + PLANOS + VALOR -->
-    <section class="section section-sobre" id="sobre">
+    <section class="section section-sobre" id="sobre" aria-labelledby="titulo-sobre">
       <div class="container">
 
         <!-- O QUE É A JAHUB -->
@@ -173,15 +257,15 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
             <div class="box-ilustration">
 
               <div class="title-ilustration">
-                <p class=" title" animationTime=".7s">
+                <h2 id="titulo-sobre" class="title" animationTime=".7s">
                   Quem somos
-                </p>
+                </h2>
               </div>
 
               <div class="content-section">
                 <div class="vantagens-plataforma list-section">
-                  <h4 class="title-lista">Uma plataforma para exibição e automação de conteúdos em TVs indoor, de forma
-                    simples e profissional.</h4>
+                  <h3 class="title-lista">Uma plataforma para exibição e automação de conteúdos em TVs indoor, de forma
+                    simples e profissional.</h3>
                   <ul class="lista-vantagens lista-vantagens-section-sobre">
                     <li class="item-lista">
                       <span class="title-item">Gerencie suas telas em tempo real</span>
@@ -219,7 +303,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
                 <div class="background-ilustration">
                   <img class="midia-ilustration" src="./resources/img/tema/tv-indoor-2.png"
-                    alt="Exemplo de TV indoor exibindo conteúdos">
+                    alt="Exemplo de TV indoor exibindo anúncios em TV corporativa" loading="lazy">
                 </div>
               </div>
 
@@ -234,14 +318,14 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
             <div class="box-ilustration">
 
               <div class="title-ilustration">
-                <p class=" title" animationTime=".7s">
+                <h2 class="title" animationTime=".7s">
                   Como funciona na prática
-                </p>
+                </h2>
               </div>
 
               <div class="content-section">
                 <div class="vantagens-plataforma list-section">
-                  <h4 class="title-lista">Veja como é simples começar a utilizar nossa plataforma</h4>
+                  <h3 class="title-lista">Veja como é simples começar a utilizar nossa plataforma</h3>
 
                   <ul class="lista-vantagens lista-vantagens-section-sobre">
 
@@ -330,17 +414,17 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
             <div class="box-ilustration">
 
               <div class="title-ilustration">
-                <p class=" title" animationTime=".7s">
+                <h2 class="title" animationTime=".7s">
                   Diferenciais da plataforma
-                </p>
+                </h2>
               </div>
 
               <div class="content-section">
                 <div class="vantagens-plataforma list-section">
 
-                  <h4 class="title-lista">
+                  <h3 class="title-lista">
                     Pensada para estabilidade, praticidade e resultado.
-                  </h4>
+                  </h3>
 
                   <ul class="lista-vantagens lista-vantagens-section-sobre">
 
@@ -404,7 +488,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
                 <div class="background-ilustration">
                   <img class=" midia-ilustration midia-ilustration-central-exibicao"
-                    src="./resources/img/tema/ilustracao-central-exibicao.jpg" alt="Ícone de benefícios">
+                    src="./resources/img/tema/ilustracao-central-exibicao.jpg" alt="Ilustração de central de exibição de mídia indoor" loading="lazy">
                 </div>
 
               </div>
@@ -421,17 +505,17 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
             <div class="box-ilustration">
 
               <div class="title-ilustration">
-                <p class=" title" animationTime=".7s">
+                <h2 class="title" animationTime=".7s">
                   Agregação de valor e retorno
-                </p>
+                </h2>
               </div>
 
               <div class="content-section">
                 <div class="vantagens-plataforma list-section">
 
-                  <h4 class="title-lista">
+                  <h3 class="title-lista">
                     Um investimento que pode se pagar sozinho.
-                  </h4>
+                  </h3>
                   <p class="subtitle-lista">
                     Use suas telas como um canal de mídia para parceiros e fornecedores e faça a assinatura se pagar com os próprios anúncios.
                   </p>
@@ -483,7 +567,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
 
                 <div class="background-ilustration">
                   <img class=" midia-ilustration midia-ilustration-retorno"
-                    src="./resources/img/tema/ilustracao-retorno.jpg" alt="Ícone de retorno financeiro">
+                    src="./resources/img/tema/ilustracao-retorno.jpg" alt="Ilustração de retorno financeiro com mídia indoor" loading="lazy">
                 </div>
 
               </div>
@@ -498,7 +582,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
     </section>
 
     <!-- PREÇOS -->
-    <section class="section section-precos" id="precos">
+    <section class="section section-precos" id="precos" aria-labelledby="titulo-precos">
       <div class="container">
         <div class="row-container row-container-precos">
 
@@ -506,14 +590,14 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
             <div class="box-ilustration">
 
               <div class="title-ilustration">
-                <p class=" title" animationTime=".7s">
+                <h2 id="titulo-precos" class="title" animationTime=".7s">
                   Planos e valores
-                </p>
+                </h2>
               </div>
 
               <div class="content-section">
                 <div class="precos-plataforma list-section">
-                  <h4 class="title-lista">Planos pensados para a operação real do seu negócio.</h4>
+                  <h3 class="title-lista">Planos pensados para a operação real do seu negócio.</h3>
                   <p class="subtitle-lista">
                     Todos os planos incluem painel online para gestão de telas, atualizações contínuas da plataforma e suporte da nossa equipe.
                   </p>
@@ -536,34 +620,34 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
     </section>
 
     <!-- SEJA PARCEIRO / FORMULÁRIO (MANTIDO) -->
-    <section class="section section-seja-parceiro" id="seja-parceiro">
+    <section class="section section-seja-parceiro" id="seja-parceiro" aria-labelledby="titulo-form-parceiro">
       <div class="container">
         <div class="row-container row-container-seja-parceiro">
           <div class="col-box-content col-box-content-formulario">
             <div class="box-content box-content-formulario">
 
               <div class="titles">
-                <p class=" title" animationTime=".7s">
+                <h2 id="titulo-form-parceiro" class="title" animationTime=".7s">
                   Nos acione e comece agora mesmo
-                </p>
-                <h4 class="subtitle">
+                </h2>
+                <h3 class="subtitle">
                   Preencha as informações abaixo. Entraremos em contato assim que possível.
-                </h4>
+                </h3>
               </div>
 
               <div class="content-form">
-                <form class="form form-lead-partner" id="form-cadastro-lead">
+                <form class="form form-lead-partner" id="form-cadastro-lead" aria-labelledby="titulo-form-parceiro">
                   <div class="form-group form-group-names">
                     <div class="fg-row">
                       <div class="fg-col fg-col-nome">
                         <div class="content-fg-col">
-                          <label for="#ipt-nome" class="label-ipt label-ipt-nome">Nome</label>
+                          <label for="ipt-nome" class="label-ipt label-ipt-nome">Nome</label>
                           <input type="text" class="ipt-form" id="ipt-nome" name="nome" placeholder="Seu nome">
                         </div>
                       </div>
                       <div class="fg-col fg-col-email">
                         <div class="content-fg-col">
-                          <label for="#ipt-email" class="label-ipt label-ipt-email">E-mail</label>
+                          <label for="ipt-email" class="label-ipt label-ipt-email">E-mail</label>
                           <input type="email" class="ipt-form" id="ipt-email" name="email" placeholder="Seu e-mail">
                         </div>
                       </div>
@@ -572,7 +656,7 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
                   <div class="form-group">
                     <div class="fg-row">
                       <div class="fg-col fg-col-celular">
-                        <label for="#ipt-celular" class="label-ipt label-ipt-celular">Celular</label>
+                        <label for="ipt-celular" class="label-ipt label-ipt-celular">Celular</label>
                         <input type="text" class="ipt-form mask-celular" id="ipt-celular" name="celular"
                           placeholder="Celular com DD">
                       </div>
@@ -612,12 +696,12 @@ src="https://www.facebook.com/tr?id=705039985876372&ev=PageView&noscript=1"
           <div class="col-box-content col-box-content-redes-sociais">
             <div class="box-content box-content-redes-sociais">
               <div class="titles">
-                <p class=" title" animationTime=".7s">
+                <h2 class="title" animationTime=".7s">
                   Nossas redes sociais
-                </p>
-                <h4 class="subtitle">
+                </h2>
+                <h3 class="subtitle">
                   Fique por dentro das novidades sobre automação de anúncios indoor e gestão de telas.
-                </h4>
+                </h3>
               </div>
               <div class="content-redes-sociais">
                 <ul class="list-redes">
