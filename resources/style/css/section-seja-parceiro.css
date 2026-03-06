@@ -80,6 +80,14 @@
   width: 150px;
 }
 
+.section-seja-parceiro .container .row-container .col-box-content .box-content
+  .content-form .form-lead-partner .form-group-btn-submit .fg-row .fg-col .form-note {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-family: "Inter", sans-serif;
+}
+
 .section-seja-parceiro .container .row-container.row-container-redes-sociais .content-redes-sociais{
   padding-top: 20px;
 }

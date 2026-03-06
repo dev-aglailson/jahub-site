@@ -4,6 +4,19 @@
   background-color: #F6F8FA;
 }
 
+.section-sobre .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.section-sobre .container .row-container-intro {
+  margin-bottom: 32px;
+}
+
+.section-sobre .container .row-container-intro:last-of-type {
+  margin-bottom: 0;
+}
+
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration {
   display: flex;
   flex-direction: column;
@@ -149,7 +162,8 @@
   border-left: 3px solid #d1d5db;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 12px 10px 14px;
+  margin-bottom: 8px;
 }
 * {
     box-sizing: border-box;
@@ -165,6 +179,23 @@
   color: #282e38;
   cursor: pointer;
   border-bottom: 1px solid #efefef;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.section-sobre .container .row-container-intro .col-tiles-box-ilustration
+  .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .title-item .step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #00aaff;
 }
 
 .section-sobre .container .row-container-intro .col-tiles-box-ilustration .box-ilustration .vantagens-plataforma .lista-vantagens .item-lista .content-item {

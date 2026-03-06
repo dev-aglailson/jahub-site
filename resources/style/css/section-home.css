@@ -25,12 +25,47 @@
   margin-bottom: 20px;
 }
 
+.section-home .container .row-container .content-titles-btns-acoes .badge-hero {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #00f968;
+  background: rgba(0, 249, 104, 0.1);
+  border: 1px solid rgba(0, 249, 104, 0.4);
+}
+
 .section-home .container .row-container .content-titles-btns-acoes .subtitle {
   color: #FFFFFF;
-  border: 2px dashed #00aaff;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.section-home .container .row-container .content-titles-btns-acoes .subtitle-highlight {
+  border: 1px solid rgba(0, 170, 255, 0.4);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
-  padding: 10px;
+  padding: 10px 12px;
+}
+
+.section-home .container .row-container .content-titles-btns-acoes .segment-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.section-home .container .row-container .content-titles-btns-acoes .segment-tags .segment-tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: #e5e7eb;
+  border: 1px solid rgba(229, 231, 235, 0.4);
+  background: rgba(15, 23, 42, 0.5);
 }
 
 .section-home .container .row-btns-acoes {
