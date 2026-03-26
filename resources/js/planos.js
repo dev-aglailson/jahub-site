@@ -11,6 +11,127 @@ window.addEventListener('load', async function () {
 })
 
 const dataPlanos = {
+  init:{
+    hash:'init',
+    cor:'#00aaff',
+    titulo:'Inicial',
+    preco_de:45.90,
+    preco_por:29.90,
+    descricao:'Ideal para quem deseja exibir conteúdo próprio em estabelecimento próprio, divulgando ofertas, promoções e comunicados de forma profissional e organizada.',
+    label_btn_acao:'Começar agora',
+    especificacoes:{
+      checkout:{
+        hash:"checkout",
+        label:'Checkout de Anúncios para possiveis anúnciantes',
+        descricao:'Anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma.',
+        detalhes_modal:{
+          descricao:'Com a funcionalidade monetização ativada, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/checkout-rapido.jpg",
+              alt:"imagem 1"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/confgis-monetizacao.jpg",
+              alt:"imagem 2"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/listagem-repasses.jpg",
+              alt:"imagem 3"
+            }
+          ]
+        }
+      },
+      monitoramento:{
+        hash:"monitoramento",
+        label:'Monitoramento em tempo real via painel',
+        descricao:'Acompanhe as exibições em tempo real diretamente pelo painel da plataforma.',
+        detalhes_modal:{
+          descricao:`Visualize em tempo real o que está sendo exibido e o que
+              será exibido na sequência, através de uma timeline organizada com a ordem e o tempo de cada mídia.
+              <br>
+              <br>
+              Além disso, gerencie as programações com facilidade: cada programação organiza as inserções pagas,
+              como por exemplo as exibições dos anunciantes do dia atual.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-timeline.jpg",
+              alt:"imagem 1"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao.jpg",
+              alt:"imagem 2"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao-exibicao.jpg",
+              alt:"imagem 3"
+            }
+          ]
+        }
+      },
+      gerenciamento_instacias:{
+        hash:"gerenciamento_instacias",
+        label:'Gerenciamento individual dos pontos de exibição',
+        descricao:'Gerenciamento individual em casos com mais de um ponto de exibição ativo.',
+        detalhes_modal:{
+          descricao:`Controle cada ponto de exibição de forma individual, ativando ou desativando a exibição nas telas conforme sua necessidade.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/gerenciamento-instancias/ponto-de-exibicao.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      suporte:{
+        hash:"suporte",
+        label:'Suporte de segunda a sexta <span style="color:#444; font-weight: bold;">em horário comercial</span>',
+        descricao:'Atendimento disponível em dias úteis para auxiliar na operação e dúvidas da plataforma <span>em horário comercial.</span>',
+        detalhes_modal:{
+          descricao:`Atendimento disponível em dias úteis, <span>em horário comercial</span>, para auxiliar na operação da plataforma, 
+                      esclarecer dúvidas, orientar sobre configurações e oferecer suporte sempre que necessário, garantindo 
+                      que seus pontos de exibição funcionem corretamente e sem interrupções.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/suporte/img-suporte-whatsapp-owner.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      midias_default:{
+        hash:"midias_default",
+        label:'Até <span style="color:#444; font-weight: bold;">6 mídias</span> padrão ativas',
+        descricao:`Permite cadastrar até 6 anúncios anúncios fixos, como promoções, produtos ou campanhas, que ficam 
+        rodando automaticamente nas telas ao longo do dia.`,
+        detalhes_modal:{
+          descricao:`Permite cadastrar até 6 anúncios fixos, como promoções da sua loja, divulgação de produtos, 
+          campanhas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
+          do dia, seguindo as prioridades definidas por peso, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      quantidade_instancias:{
+        hash:"quantidade_instancias",
+        label:`Controle <span style="color:#444;font-weight: bold;">uma</span> TV/ponto de exibição`,
+        descricao:`Permite um tela conectada exibindo anúncios.`,
+        detalhes_modal:{
+          descricao:`Permite conectar uma tela ao mesmo plano, exibindo anúncios. Ideal para quem possui um ponto de exibição no estabelecimento e deseja gerenciar via painel.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-init.jpg",
+              alt:"imagem 2"
+            }
+          ]
+        }
+      }
+    }
+  },
   owner:{
     hash:'owner',
     cor:'#00aaff',

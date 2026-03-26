@@ -350,6 +350,20 @@
   transform: scale(1.1);
 }
 
+/* Especificidades por plano init */
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-init .content-plano .header-plano {
+  background-color: #444;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-init .content-plano .box-preco {
+  color: #444;
+}
+
+.section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-init .content-plano .box-btns-acoes .content-btn-principal .btn-principal {
+  background-color: #444;
+}
+/* Fim especificidades por plano init */
+
 /* Especificidades por plano owner */
 .section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos .item-lista-planos.plano-owner .content-plano .header-plano {
   background-color: #00aaff;
