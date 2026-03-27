@@ -101,8 +101,8 @@ const dataPlanos = {
       },
       midias_default:{
         hash:"midias_default",
-        label:'Até <span style="color:#444; font-weight: bold;">6 mídias</span> padrão ativas',
-        descricao:`Permite cadastrar até 6 anúncios anúncios fixos, como promoções, produtos ou campanhas, que ficam 
+        label:'Até <span style="color:#444; font-weight: bold;">6 anúncios</span> fixos',
+        descricao:`Permite cadastrar até 6 anúncios fixos, como promoções, produtos ou campanhas, que ficam 
         rodando automaticamente nas telas ao longo do dia.`,
         detalhes_modal:{
           descricao:`Permite cadastrar até 6 anúncios fixos, como promoções da sua loja, divulgação de produtos, 
@@ -222,11 +222,11 @@ const dataPlanos = {
       },
       midias_default:{
         hash:"midias_default",
-        label:'Até <span style="color:#00aaff;">8 mídias</span> padrão ativas',
-        descricao:`Permite cadastrar até <span style="color:#00aaff;">8 anúncios</span> próprios, como promoções, produtos ou campanhas, que ficam 
+        label:'Até <span style="color:#00aaff;">8 anúncios</span> fixos',
+        descricao:`Permite cadastrar até <span style="color:#00aaff;">8 anúncios</span> fixos, como promoções, produtos ou campanhas, que ficam 
         rodando automaticamente nas telas ao longo do dia.`,
         detalhes_modal:{
-          descricao:`Permite cadastrar até <span style="color:#00aaff;">8 anúncios</span> próprios, como promoções da sua loja, divulgação de produtos, 
+          descricao:`Permite cadastrar até <span style="color:#00aaff;">8 anúncios</span> fixos, como promoções da sua loja, divulgação de produtos, 
           campanhas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
           do dia, seguindo as prioridades definidas por peso, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
           imagens:[
@@ -345,11 +345,11 @@ const dataPlanos = {
       },
       midias_default:{
         hash:"midias_default",
-        label:'Até <span style="color:#845adf;">15 mídias</span> padrão ativas',
-        descricao:`Permite cadastrar até <span style="color:#845adf;">15 anúncios</span>  próprios, como promoções, produtos ou campanhas, que ficam 
+        label:'Até <span style="color:#845adf;">15 anúncios</span> fixos',
+        descricao:`Permite cadastrar até <span style="color:#845adf;">15 anúncios</span>  fixos, como promoções, produtos ou campanhas, que ficam 
         rodando automaticamente nas telas ao longo do dia.`,
         detalhes_modal:{
-          descricao:`Permite cadastrar até <span style="color:#845adf;">15 anúncios</span> próprios, como promoções da sua loja, divulgação de produtos, 
+          descricao:`Permite cadastrar até <span style="color:#845adf;">15 anúncios</span> fixos, como promoções da sua loja, divulgação de produtos, 
           campanhas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
           do dia, seguindo as prioridades definidas por peso, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
           imagens:[
