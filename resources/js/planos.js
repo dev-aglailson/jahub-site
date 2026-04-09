@@ -121,7 +121,7 @@ const dataPlanos = {
         label:`Controle <span style="color:#444;font-weight: bold;">uma</span> TV/ponto de exibição`,
         descricao:`Permite um tela conectada exibindo anúncios.`,
         detalhes_modal:{
-          descricao:`Permite conectar uma tela ao mesmo plano, exibindo anúncios. Ideal para quem possui um ponto de exibição no estabelecimento e deseja gerenciar via painel.`,
+          descricao:`Permite conectar uma tela , exibindo anúncios. Ideal para quem possui um ponto de exibição no estabelecimento e deseja gerenciar via painel.`,
           imagens:[
             {
               url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-init.jpg",
@@ -242,7 +242,7 @@ const dataPlanos = {
         label:`Controle <span style="color:#00aaff;">até 2</span> TVs/pontos de exibição`,
         descricao:`Permite <span style="color:#00aaff;">até 2 telas</span> conectadas exibindo anúncios simultaneamente.`,
         detalhes_modal:{
-          descricao:`Permite conectar <span style="color:#00aaff;">até 2 telas</span> ao mesmo plano, exibindo anúncios simultaneamente e de 
+          descricao:`Permite conectar <span style="color:#00aaff;">até 2 telas</span>, exibindo anúncios simultaneamente e de 
           forma sincronizada. Ideal para quem possui mais de um ponto de exibição no estabelecimento e deseja gerenciar tudo em um único painel, 
           garantindo que os conteúdos sejam reproduzidos automaticamente em ambas as telas.`,
           imagens:[
@@ -365,7 +365,7 @@ const dataPlanos = {
         label:`Controle <span style="color:#845adf;">até 8</span> TVs/pontos de exibição`,
         descricao:`Permite <span style="color:#845adf;">até 8 telas</span> conectadas exibindo anúncios simultaneamente.`,
         detalhes_modal:{
-          descricao:`Permite conectar <span style="color:#845adf;">até 8 telas</span> ao mesmo plano, exibindo anúncios simultaneamente e de 
+          descricao:`Permite conectar <span style="color:#845adf;">até 8 telas</span> , exibindo anúncios simultaneamente e de 
           forma sincronizada. Ideal para quem possui mais de um ponto de exibição no estabelecimento e deseja gerenciar tudo em um único painel, 
           garantindo que os conteúdos sejam reproduzidos automaticamente em ambas as telas.`,
           imagens:[
