@@ -47,7 +47,7 @@ const dataPlanos = {
           ]
         }
       },
-      gerenciamento_instacias:{
+      /*gerenciamento_instacias:{
         hash:"gerenciamento_instacias",
         label:'Gerenciamento individual dos pontos de exibição',
         descricao:'Gerenciamento individual em casos com mais de um ponto de exibição ativo.',
@@ -60,7 +60,7 @@ const dataPlanos = {
             }
           ]
         }
-      },
+      },*/
       suporte:{
         hash:"suporte",
         label:'Suporte de segunda a sexta <span style="color:#444; font-weight: bold;">em horário comercial</span>',
@@ -94,6 +94,22 @@ const dataPlanos = {
           ]
         }
       },
+      alterar_midias:{
+        hash:"alterar_midia",
+        label:"Alteração das midias via painel, sem uso de pendrive",
+        descricao:`Altere as mídias remotamente pelo painel, em tempo real, sem precisar de pendrive ou acesso físico à TV.`,
+        detalhes_modal:{
+          descricao:`Com essa funcionalidade, você pode atualizar anúncios, ofertas e conteúdos diretamente pelo painel de controle,
+                     de qualquer lugar. Não é necessário utilizar pendrive, computador conectado à TV ou ir até o local tudo é feito
+                    online, de forma rápida e prática.`,
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
+              alt:"imagem 1"
+            }
+          ]
+        }
+      },
       checkout:{
         hash:"checkout",
         label:'Checkout de anúncios para possiveis anúnciantes extras.',
@@ -118,7 +134,7 @@ const dataPlanos = {
       },
       quantidade_instancias:{
         hash:"quantidade_instancias",
-        label:`Controle <span style="color:#444;font-weight: bold;">uma</span> TV/ponto de exibição`,
+        label:`Gerencie remotamente <span style="color:#444;font-weight: bold;">uma</span> TV/ponto de exibição`,
         descricao:`Permite um tela conectada exibindo anúncios.`,
         detalhes_modal:{
           descricao:`Permite conectar uma tela para exibição de anúncios. Ideal para quem possui um ou mais pontos de exibição e deseja gerenciar cada tela individualmente por meio do painel.`,
