@@ -17,7 +17,7 @@ const dataPlanos = {
     titulo:'Inicial',
     preco_de:45.90,
     preco_por:29.90,
-    descricao:'Ideal para quem deseja exibir conteúdo próprio em estabelecimento próprio, divulgando ofertas, promoções e comunicados de forma profissional e organizada.',
+    descricao:'Ideal para quem deseja gerenciar mais de uma tela com exibição individual, sendo uma assinatura por tela, assim permitindo que cada tela exiba conteúdos diferentes de forma independente. Também é perfeito para quem deseja divulgar conteúdo próprio em seu estabelecimento, gerenciando uma única tela. Divulgue ofertas, promoções e comunicados de forma profissional e organizada.',
     label_btn_acao:'Começar agora',
     especificacoes:{
       checkout:{
@@ -121,7 +121,7 @@ const dataPlanos = {
         label:`Controle <span style="color:#444;font-weight: bold;">uma</span> TV/ponto de exibição`,
         descricao:`Permite um tela conectada exibindo anúncios.`,
         detalhes_modal:{
-          descricao:`Permite conectar uma tela , exibindo anúncios. Ideal para quem possui um ponto de exibição no estabelecimento e deseja gerenciar via painel.`,
+          descricao:`Permite conectar uma tela para exibição de anúncios. Ideal para quem possui um ou mais pontos de exibição e deseja gerenciar cada tela individualmente por meio do painel.`,
           imagens:[
             {
               url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-init.jpg",
@@ -138,7 +138,7 @@ const dataPlanos = {
     titulo:'Básico',
     preco_de:89.90,
     preco_por:69.90,
-    descricao:'Ideal para quem quer começar no mercado de mídia indoor ou divulgar ofertas do próprio negócio de forma profissional.',
+    descricao:'Ideal para quem quer começar no mercado de mídia indoor ou divulgar ofertas do próprio negócio de forma profissional. Permite criar um fluxo único de exibição (canal de transmissão), no qual todas as telas exibem o mesmo conteúdo simultaneamente, facilitando a segmentação por nicho e a padronização da comunicação.',
     label_btn_acao:'Começar agora',
     especificacoes:{
       checkout:{
@@ -243,8 +243,8 @@ const dataPlanos = {
         descricao:`Permite <span style="color:#00aaff;">até 2 telas</span> conectadas exibindo anúncios simultaneamente.`,
         detalhes_modal:{
           descricao:`Permite conectar <span style="color:#00aaff;">até 2 telas</span>, exibindo anúncios simultaneamente e de 
-          forma sincronizada. Ideal para quem possui mais de um ponto de exibição no estabelecimento e deseja gerenciar tudo em um único painel, 
-          garantindo que os conteúdos sejam reproduzidos automaticamente em ambas as telas.`,
+          forma sincronizada. Ideal para quem possui mais de um ponto de exibição e deseja gerenciar tudo em um único painel, 
+          garantindo que os conteúdos sejam reproduzidos automaticamente em todas as telas.`,
           imagens:[
             {
               url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-owner.jpg",
@@ -261,7 +261,7 @@ const dataPlanos = {
     titulo:'Profissional',
     preco_de:189.90,
     preco_por:159.90,
-    descricao:'Ideal para gestores de mídia indoor que já possuem telas instaladas e desejam gerenciar conteúdos de forma remota, profissional e escalável.',
+    descricao:'Ideal para gestores de mídia indoor que já possuem múltiplas telas instaladas e desejam operar de forma profissional e escalável. Permite criar um fluxo único de exibição (canal de transmissão), onde todas as telas reproduzem o mesmo conteúdo simultaneamente, facilitando a segmentação por nicho, a padronização da comunicação e a gestão centralizada.',
     label_btn_acao:'Começar agora',
     especificacoes:{
       checkout:{
@@ -366,8 +366,8 @@ const dataPlanos = {
         descricao:`Permite <span style="color:#845adf;">até 8 telas</span> conectadas exibindo anúncios simultaneamente.`,
         detalhes_modal:{
           descricao:`Permite conectar <span style="color:#845adf;">até 8 telas</span> , exibindo anúncios simultaneamente e de 
-          forma sincronizada. Ideal para quem possui mais de um ponto de exibição no estabelecimento e deseja gerenciar tudo em um único painel, 
-          garantindo que os conteúdos sejam reproduzidos automaticamente em ambas as telas.`,
+          forma sincronizada. Ideal para quem possui mais de um ponto de exibição e deseja gerenciar tudo em um único painel, 
+          garantindo que os conteúdos sejam reproduzidos automaticamente em todas as telas.`,
           imagens:[
             {
               url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-agency.jpg",
