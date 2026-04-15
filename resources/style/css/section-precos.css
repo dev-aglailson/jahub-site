@@ -44,6 +44,8 @@
 .section-precos .container .row-container-precos .col-titles-box-ilustration .box-ilustration .content-section .precos-plataforma .lista-planos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-precos .container .row-container-precos .col-titles-box-ilustration

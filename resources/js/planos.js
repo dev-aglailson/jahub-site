@@ -15,33 +15,11 @@ const dataPlanos = {
     hash:'init',
     cor:'#00aaff',
     titulo:'Inicial',
-    preco_de:45.90,
-    preco_por:29.90,
+    preco_de:69.90,
+    preco_por:49.90,
     descricao:'Ideal para quem deseja gerenciar mais de uma tela com exibição individual, sendo uma assinatura por tela, assim permitindo que cada tela exiba conteúdos diferentes de forma independente. Também é perfeito para quem deseja divulgar conteúdo próprio em seu estabelecimento, gerenciando uma única tela. Divulgue ofertas, promoções e comunicados de forma profissional e organizada.',
     label_btn_acao:'Começar agora',
     especificacoes:{
-      checkout:{
-        hash:"checkout",
-        label:'Checkout de Anúncios para possiveis anúnciantes',
-        descricao:'Anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma.',
-        detalhes_modal:{
-          descricao:'Com a funcionalidade monetização ativada, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
-          imagens:[
-            {
-              url:"resources/img/tema/planos/owner/especificacoes/checkout/checkout-rapido.jpg",
-              alt:"imagem 1"
-            },
-            {
-              url:"resources/img/tema/planos/owner/especificacoes/checkout/confgis-monetizacao.jpg",
-              alt:"imagem 2"
-            },
-            {
-              url:"resources/img/tema/planos/owner/especificacoes/checkout/listagem-repasses.jpg",
-              alt:"imagem 3"
-            }
-          ]
-        }
-      },
       monitoramento:{
         hash:"monitoramento",
         label:'Monitoramento em tempo real via painel',
@@ -101,17 +79,39 @@ const dataPlanos = {
       },
       midias_default:{
         hash:"midias_default",
-        label:'Até <span style="color:#444; font-weight: bold;">6 anúncios</span> fixos',
-        descricao:`Permite cadastrar até 6 anúncios fixos, como promoções, produtos ou campanhas, que ficam 
+        label:'Até <span style="color:#444; font-weight: bold;">10 anúnciantes fixos por tela</span>',
+        descricao:`Permite cadastrar até 10 anúnciantes, com anúncios fixos como promoções, produtos ou avisos, que ficam 
         rodando automaticamente nas telas ao longo do dia.`,
         detalhes_modal:{
-          descricao:`Permite cadastrar até 6 anúncios fixos, como promoções da sua loja, divulgação de produtos, 
-          campanhas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
-          do dia, seguindo as prioridades definidas por peso, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
+          descricao:`Permite cadastrar até 10 anúnciantes, com anúncios fixos, como promoções de loja, divulgação de produtos, 
+          ofertas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
+          do dia, seguindo as prioridades definidas, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
           imagens:[
             {
               url:"resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
               alt:"imagem 1"
+            }
+          ]
+        }
+      },
+      checkout:{
+        hash:"checkout",
+        label:'Checkout de anúncios para possiveis anúnciantes extras.',
+        descricao:'Anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma.(módulo de monetização)',
+        detalhes_modal:{
+          descricao:'Com a funcionalidade monetização ativada, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
+          imagens:[
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/checkout-rapido.jpg",
+              alt:"imagem 1"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/confgis-monetizacao.jpg",
+              alt:"imagem 2"
+            },
+            {
+              url:"resources/img/tema/planos/owner/especificacoes/checkout/listagem-repasses.jpg",
+              alt:"imagem 3"
             }
           ]
         }
@@ -131,7 +131,7 @@ const dataPlanos = {
         }
       }
     }
-  },
+  }/*,
   owner:{
     hash:'owner',
     cor:'#00aaff',
@@ -377,7 +377,7 @@ const dataPlanos = {
         }
       }
     }
-  }
+  }*/
 }
 
 function montarPlanos(dataPlanos){
