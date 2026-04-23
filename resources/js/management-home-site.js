@@ -455,9 +455,10 @@ function getDataPlanos(dataHome) {
 function getSpecificDataPlanoInitial(dataPlano){
   let raw           = dataPlano.configs_plano['plano/init-plain/specifications'].valor_configuracao
   let especificacoes= JSON.parse(raw)
-
+  console.log()
   let dados = {
     hash: 'init',
+    hashReal: dataPlano.data_plano.hash,
     cor: '#00aaff',
     titulo: 'Inicial',
     preco_de: 69.90,
@@ -475,7 +476,7 @@ function montarPlanos(dataPlanos) {
 
   return new Promise((resolve, reject) => {
     Object.values(dataPlanos).forEach(dataPlano => {
-
+      console.log(dataPlano)
       let liItemPlano = $(`
         <li class="item-lista-planos plano-${dataPlano.hash}" hash-plano="${dataPlano.hash}">
           <div class="content-plano">
@@ -512,8 +513,8 @@ function montarPlanos(dataPlanos) {
 
             <div class="box-btns-acoes">
               <div class="content-btn-principal">
-                <button linkinterno="true" class="btn-principal item-auto-scroll" id="btn-comecar-plano-${dataPlano.hash}">
-                  <a href="#seja-parceiro" class="btn bounce-top">${dataPlano.label_btn_acao}</a>
+                <button class="btn-principal" id="btn-comecar-plano-${dataPlano.hash}">
+                  <a href="https://jahub.app/partner/cadastro?hash-plain=${dataPlano.hashReal}" class="btn bounce-top">${dataPlano.label_btn_acao}</a>
                 </button>
               </div>
             </div>
