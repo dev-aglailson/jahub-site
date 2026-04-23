@@ -1,5 +1,12 @@
 window.addEventListener('load', async function () {
 
+  const consultDataHome = await getDataHomeSaleChannelSite();
+
+  const dataHome = consultDataHome.content ?? {};
+
+  const dataPlanos = await getSpecificData('dataPlanos', dataHome);
+
+  console.log(dataPlanos)
   await montarPlanos(dataPlanos)
 
   let boxesPlanos = document.querySelectorAll('.item-lista-planos')
@@ -11,38 +18,38 @@ window.addEventListener('load', async function () {
 })
 
 const dataPlanos = {
-  init:{
-    hash:'init',
-    cor:'#00aaff',
-    titulo:'Inicial',
-    preco_de:69.90,
-    preco_por:49.90,
-    descricao:'Ideal para quem deseja gerenciar mais de uma tela com exibição individual, sendo uma assinatura por tela, assim permitindo que cada tela exiba conteúdos diferentes de forma independente. Também é perfeito para quem deseja divulgar conteúdo próprio em seu estabelecimento, gerenciando uma única tela. Divulgue ofertas, promoções e comunicados de forma profissional e organizada.',
-    label_btn_acao:'Começar agora',
-    especificacoes:{
-      monitoramento:{
-        hash:"monitoramento",
-        label:'Monitoramento em tempo real via painel',
-        descricao:'Acompanhe as exibições em tempo real diretamente pelo painel da plataforma.',
-        detalhes_modal:{
-          descricao:`Visualize em tempo real o que está sendo exibido e o que
+  init: {
+    hash: 'init',
+    cor: '#00aaff',
+    titulo: 'Inicial',
+    preco_de: 69.90,
+    preco_por: 49.90,
+    descricao: 'Ideal para quem deseja gerenciar mais de uma tela com exibição individual, sendo uma assinatura por tela, assim permitindo que cada tela exiba conteúdos diferentes de forma independente. Também é perfeito para quem deseja divulgar conteúdo próprio em seu estabelecimento, gerenciando uma única tela. Divulgue ofertas, promoções e comunicados de forma profissional e organizada.',
+    label_btn_acao: 'Começar agora',
+    especificacoes: {
+      monitoramento: {
+        hash: "monitoramento",
+        label: 'Monitoramento em tempo real via painel',
+        descricao: 'Acompanhe as exibições em tempo real diretamente pelo painel da plataforma.',
+        detalhes_modal: {
+          descricao: `Visualize em tempo real o que está sendo exibido e o que
               será exibido na sequência, através de uma timeline organizada com a ordem e o tempo de cada mídia.
               <br>
               <br>
               Além disso, gerencie as programações com facilidade: cada programação organiza as inserções pagas,
               como por exemplo as exibições dos anunciantes do dia atual.`,
-          imagens:[
+          imagens: [
             {
-              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-timeline.jpg",
-              alt:"imagem 1"
+              url: "resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-timeline.jpg",
+              alt: "imagem 1"
             },
             {
-              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao.jpg",
-              alt:"imagem 2"
+              url: "resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao.jpg",
+              alt: "imagem 2"
             },
             {
-              url:"resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao-exibicao.jpg",
-              alt:"imagem 3"
+              url: "resources/img/tema/planos/owner/especificacoes/monitoramento/exibicao-e-programacao-exibicao.jpg",
+              alt: "imagem 3"
             }
           ]
         }
@@ -61,87 +68,87 @@ const dataPlanos = {
           ]
         }
       },*/
-      suporte:{
-        hash:"suporte",
-        label:'Suporte de segunda a sexta <span style="color:#444; font-weight: bold;">em horário comercial</span>',
-        descricao:'Atendimento disponível em dias úteis para auxiliar na operação e dúvidas da plataforma <span>em horário comercial.</span>',
-        detalhes_modal:{
-          descricao:`Atendimento disponível em dias úteis, <span>em horário comercial</span>, para auxiliar na operação da plataforma, 
+      suporte: {
+        hash: "suporte",
+        label: 'Suporte de segunda a sexta <span style="color:#444; font-weight: bold;">em horário comercial</span>',
+        descricao: 'Atendimento disponível em dias úteis para auxiliar na operação e dúvidas da plataforma <span>em horário comercial.</span>',
+        detalhes_modal: {
+          descricao: `Atendimento disponível em dias úteis, <span>em horário comercial</span>, para auxiliar na operação da plataforma, 
                       esclarecer dúvidas, orientar sobre configurações e oferecer suporte sempre que necessário, garantindo 
                       que seus pontos de exibição funcionem corretamente e sem interrupções.`,
-          imagens:[
+          imagens: [
             {
-              url:"resources/img/tema/planos/owner/especificacoes/suporte/img-suporte-whatsapp-owner.jpg",
-              alt:"imagem 1"
+              url: "resources/img/tema/planos/owner/especificacoes/suporte/img-suporte-whatsapp-owner.jpg",
+              alt: "imagem 1"
             }
           ]
         }
       },
-      midias_default:{
-        hash:"midias_default",
-        label:'Até <span style="color:#444; font-weight: bold;">10 anúnciantes fixos por tela</span>',
-        descricao:`Permite cadastrar até 10 anúnciantes, com anúncios fixos como promoções, produtos ou avisos, que ficam 
+      midias_default: {
+        hash: "midias_default",
+        label: 'Até <span style="color:#444; font-weight: bold;">10 anúnciantes fixos por tela</span>',
+        descricao: `Permite cadastrar até 10 anúnciantes, com anúncios fixos como promoções, produtos ou avisos, que ficam 
         rodando automaticamente nas telas ao longo do dia.`,
-        detalhes_modal:{
-          descricao:`Permite cadastrar até 10 anúnciantes, com anúncios fixos, como promoções de loja, divulgação de produtos, 
+        detalhes_modal: {
+          descricao: `Permite cadastrar até 10 anúnciantes, com anúncios fixos, como promoções de loja, divulgação de produtos, 
           ofertas sazonais ou avisos institucionais. Esses conteúdos ficam organizados na plataforma e são exibidos automaticamente nas telas ao longo 
           do dia, seguindo as prioridades definidas, com alternância dinâmica para manter a exibição sempre ativa e atrativa.`,
-          imagens:[
+          imagens: [
             {
-              url:"resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
-              alt:"imagem 1"
+              url: "resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
+              alt: "imagem 1"
             }
           ]
         }
       },
-      alterar_midias:{
-        hash:"alterar_midia",
-        label:"Alteração das midias via painel, sem uso de pendrive",
-        descricao:`Altere as mídias remotamente pelo painel, em tempo real, sem precisar de pendrive ou acesso físico à TV.`,
-        detalhes_modal:{
-          descricao:`Com essa funcionalidade, você pode atualizar anúncios, ofertas e conteúdos diretamente pelo painel de controle,
+      alterar_midias: {
+        hash: "alterar_midia",
+        label: "Alteração das midias via painel, sem uso de pendrive",
+        descricao: `Altere as mídias remotamente pelo painel, em tempo real, sem precisar de pendrive ou acesso físico à TV.`,
+        detalhes_modal: {
+          descricao: `Com essa funcionalidade, você pode atualizar anúncios, ofertas e conteúdos diretamente pelo painel de controle,
                      de qualquer lugar. Não é necessário utilizar pendrive, computador conectado à TV ou ir até o local tudo é feito
                     online, de forma rápida e prática.`,
-          imagens:[
+          imagens: [
             {
-              url:"resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
-              alt:"imagem 1"
+              url: "resources/img/tema/planos/owner/especificacoes/midias-default/midias-default.jpg",
+              alt: "imagem 1"
             }
           ]
         }
       },
-      checkout:{
-        hash:"checkout",
-        label:'Checkout de anúncios para possiveis anúnciantes extras.',
-        descricao:'Anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma.(módulo de monetização)',
-        detalhes_modal:{
-          descricao:'Com a funcionalidade monetização ativada, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
-          imagens:[
+      checkout: {
+        hash: "checkout",
+        label: 'Checkout de anúncios para possiveis anúnciantes extras.',
+        descricao: 'Anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma.(módulo de monetização)',
+        detalhes_modal: {
+          descricao: 'Com a funcionalidade monetização ativada, anunciantes contratam exibição em suas TVs e realizam o pagamento automaticamente pela plataforma, com sua comissão já calculada e contabilizada conforme a porcentagem acordada.',
+          imagens: [
             {
-              url:"resources/img/tema/planos/owner/especificacoes/checkout/checkout-rapido.jpg",
-              alt:"imagem 1"
+              url: "resources/img/tema/planos/owner/especificacoes/checkout/checkout-rapido.jpg",
+              alt: "imagem 1"
             },
             {
-              url:"resources/img/tema/planos/owner/especificacoes/checkout/confgis-monetizacao.jpg",
-              alt:"imagem 2"
+              url: "resources/img/tema/planos/owner/especificacoes/checkout/confgis-monetizacao.jpg",
+              alt: "imagem 2"
             },
             {
-              url:"resources/img/tema/planos/owner/especificacoes/checkout/listagem-repasses.jpg",
-              alt:"imagem 3"
+              url: "resources/img/tema/planos/owner/especificacoes/checkout/listagem-repasses.jpg",
+              alt: "imagem 3"
             }
           ]
         }
       },
-      quantidade_instancias:{
-        hash:"quantidade_instancias",
-        label:`Gerencie remotamente <span style="color:#444;font-weight: bold;">uma</span> TV/ponto de exibição`,
-        descricao:`Permite um tela conectada exibindo anúncios.`,
-        detalhes_modal:{
-          descricao:`Permite conectar uma tela para exibição de anúncios. Ideal para quem possui um ou mais pontos de exibição e deseja gerenciar cada tela individualmente por meio do painel.`,
-          imagens:[
+      quantidade_instancias: {
+        hash: "quantidade_instancias",
+        label: `Gerencie remotamente <span style="color:#444;font-weight: bold;">uma</span> TV/ponto de exibição`,
+        descricao: `Permite um tela conectada exibindo anúncios.`,
+        detalhes_modal: {
+          descricao: `Permite conectar uma tela para exibição de anúncios. Ideal para quem possui um ou mais pontos de exibição e deseja gerenciar cada tela individualmente por meio do painel.`,
+          imagens: [
             {
-              url:"resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-init.jpg",
-              alt:"imagem 2"
+              url: "resources/img/tema/planos/owner/especificacoes/quantidade-instancias/quantidade-instancias-init.jpg",
+              alt: "imagem 2"
             }
           ]
         }
@@ -396,7 +403,74 @@ const dataPlanos = {
   }*/
 }
 
-function montarPlanos(dataPlanos){
+function getDataHomeSaleChannelSite() {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      url: 'https://jahub.app/api/v1/internal/integrador/sale-channel/site/front/home',
+      type: 'GET',
+      async: true,
+      dataType: 'json',
+      headers: {
+      },
+      success: function (data) {
+        resolve(data);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        reject(errorThrown);
+      }
+    });
+  });
+}
+
+function getSpecificData(indice, dataHome) {
+  return new Promise((resolve, reject) => {
+    switch (indice) {
+      case 'dataPlanos':
+        resolve(getDataPlanos(dataHome))
+        break;
+    }
+  })
+}
+
+function getDataPlanos(dataHome) {
+  const dataPlanos = Object.fromEntries(
+    Object.entries(dataHome.full_data_planos).map(([key, dataPlano]) => {
+      const newKey        = key.replace(/-/g, '_')
+
+      let dadosEspecificos = {}
+
+      switch (newKey) {
+        case 'init_plain':
+          dadosEspecificos = getSpecificDataPlanoInitial(dataPlano)
+        break;
+      }
+
+      return [newKey, dadosEspecificos]
+    })
+  )
+
+  return dataPlanos;
+}
+
+function getSpecificDataPlanoInitial(dataPlano){
+  let raw           = dataPlano.configs_plano['plano/init-plain/specifications'].valor_configuracao
+  let especificacoes= JSON.parse(raw)
+
+  let dados = {
+    hash: 'init',
+    cor: '#00aaff',
+    titulo: 'Inicial',
+    preco_de: 69.90,
+    preco_por: 49.90,
+    descricao: 'Ideal para quem deseja gerenciar mais de uma tela com exibição individual, sendo uma assinatura por tela, assim permitindo que cada tela exiba conteúdos diferentes de forma independente. Também é perfeito para quem deseja divulgar conteúdo próprio em seu estabelecimento, gerenciando uma única tela. Divulgue ofertas, promoções e comunicados de forma profissional e organizada.',
+    label_btn_acao: 'Começar agora',
+    especificacoes: especificacoes
+  }
+
+  return dados;
+}
+
+function montarPlanos(dataPlanos) {
   let ulListaPlanos = $('#ul-lista-planos');
 
   return new Promise((resolve, reject) => {
@@ -449,10 +523,10 @@ function montarPlanos(dataPlanos){
 
       ulListaPlanos.append(liItemPlano)
 
-      let ulListaEspecificacoes = $(ulListaPlanos).find('#lista-especificacoes-'+dataPlano.hash)
+      let ulListaEspecificacoes = $(ulListaPlanos).find('#lista-especificacoes-' + dataPlano.hash)
 
       Object.values(dataPlano.especificacoes).forEach(especificacao => {
-        
+
         let liItemEspecificacao = $(`
           <li class="item-lista-especificacoes" hash-especifica="${especificacao.hash}">
             <span class="icon-especificacao"></span>
@@ -501,9 +575,9 @@ function montarPlanos(dataPlanos){
 
         ulListaEspecificacoes.append(liItemEspecificacao)
 
-        let ulListaImagens = $(ulListaEspecificacoes).find('#previewContainer-plano-'+dataPlano.hash+'-'+especificacao.hash)
+        let ulListaImagens = $(ulListaEspecificacoes).find('#previewContainer-plano-' + dataPlano.hash + '-' + especificacao.hash)
 
-        especificacao.detalhes_modal.imagens.forEach(img =>{
+        especificacao.detalhes_modal.imagens.forEach(img => {
           let itemImg = $(
             `
             <img 
@@ -516,39 +590,39 @@ function montarPlanos(dataPlanos){
           ulListaImagens.append(itemImg)
         })
       })
-      
+
     })
 
     resolve(true)
   })
 }
 
-function listenActionsEspecificacoesPlano(boxPlano){
-  let hashPlano     = boxPlano.getAttribute('hash-plano');
-  let especificacoes= boxPlano.querySelectorAll('.item-lista-especificacoes');
+function listenActionsEspecificacoesPlano(boxPlano) {
+  let hashPlano = boxPlano.getAttribute('hash-plano');
+  let especificacoes = boxPlano.querySelectorAll('.item-lista-especificacoes');
 
   especificacoes.forEach(especificacao => {
 
     let hashEspecificacao = especificacao.getAttribute('hash-especifica');
-    let btnOpenModalDemonstracao = especificacao.querySelector('#btn-open-modal-demonstracao-'+hashEspecificacao)
-    let btnCloseModalDemonstracao = especificacao.querySelector('#btn-close-modal-demonstracao-'+hashEspecificacao)
-    let modalDemonstracao        = especificacao.querySelector('#modal-demonstracao-especificacao-'+hashEspecificacao)
+    let btnOpenModalDemonstracao = especificacao.querySelector('#btn-open-modal-demonstracao-' + hashEspecificacao)
+    let btnCloseModalDemonstracao = especificacao.querySelector('#btn-close-modal-demonstracao-' + hashEspecificacao)
+    let modalDemonstracao = especificacao.querySelector('#modal-demonstracao-especificacao-' + hashEspecificacao)
 
-    if(btnOpenModalDemonstracao){
+    if (btnOpenModalDemonstracao) {
 
-      btnOpenModalDemonstracao.addEventListener('click', (e)=>{
+      btnOpenModalDemonstracao.addEventListener('click', (e) => {
         e.preventDefault()
         modalDemonstracao.classList.add('modal-demonstracao-especificacao-opened')
-        
+
       })
 
-      btnCloseModalDemonstracao.addEventListener('click',(e)=>{
+      btnCloseModalDemonstracao.addEventListener('click', (e) => {
         e.preventDefault()
         modalDemonstracao.classList.remove('modal-demonstracao-especificacao-opened')
-        
+
       })
 
-      const container = document.getElementById('previewContainer-plano-'+hashPlano+'-'+hashEspecificacao); //deixar dinamico
+      const container = document.getElementById('previewContainer-plano-' + hashPlano + '-' + hashEspecificacao); //deixar dinamico
 
       const viewer = new Viewer(container, {
         navbar: true,   // miniaturas
